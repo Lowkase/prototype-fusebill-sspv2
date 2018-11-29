@@ -1,0 +1,26 @@
+﻿// --------------------------------------------------------------------------------
+// TEMPLATE - CONTENT
+// --------------------------------------------------------------------------------
+
+// CONTAINER FOR THE CONTENT HEADER, BODY AND FOOTER
+.t-view-content {
+	height: 100%;
+	position: relative;
+	width: 100%;	
+}
+
+.t-view-content-with-footer {
+	.t-view-content-body {
+		@include position(absolute, $top:$l-header-common-height-medium, $right:0, $bottom:$l-footer-common-height-medium, $left:0);	
+	}
+
+    form {
+        margin: 0;
+    }
+}
+
+.t-view-content-no-header {
+    .t-view-content-body {
+        @include position(absolute, $top:0, $right:0, $bottom:0, $left:0);
+    }
+}

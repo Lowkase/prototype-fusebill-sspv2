@@ -1,0 +1,111 @@
+// --------------------------------------------------------------------------------
+// MODULES - NAV - SECONDARY
+// --------------------------------------------------------------------------------
+.t-nav-secondary {
+	@include position(absolute, $top:0, $bottom:0, $left:280px);
+	//@include transition(all, $transition-timer-200ms $transition-easeInOutQuad);
+
+	background: $nav-sec-color;
+	border-left: 1px solid $nav-sec-border-left-color;
+	width: $l-nav-secondary-width;
+	z-index: $zi-bring-to-front + $zi-plus-one;
+
+	// ALL SECONDARY MENU CONTAINERS
+	> div:not(.t-nav-secondary-hide) {
+		display: none;
+	}
+
+	// HIDE SECONDARY MENU
+	.t-nav-secondary-hide {
+		@include position(absolute, $top:24px, $right:$l-spacing-13);
+	
+		cursor: pointer;
+		z-index: $zi-bring-to-front + $zi-plus-one + $zi-plus-one;
+
+		svg {
+			fill: $nav-sec-close-color;
+			height: 13px;
+			width: 13px;
+		}
+	}
+
+	// SECONDARY MENU HEADER
+	> div > div {
+		@include position(absolute, $top:0, $right:0, $left:0);
+
+		border-bottom: 1px solid $nav-sec-border-color;
+		color: $nav-sec-header-text-color;
+		height: 68px;
+		padding: 23px $l-spacing-8;
+		width: 100%;
+	}
+
+	// SECONDARY MENU LIST
+	> div > ul {
+		@include position(absolute, $top:68px, $right:0, $bottom:0, $left:0);
+
+		border-right: 1px solid $nav-sec-border-color;
+		box-shadow: $box-shadow-right;
+		list-style-type: none;
+		margin: 0; 
+		padding: 0 0 $l-spacing-34 0;
+		overflow-y: auto;
+		width: 100%;
+
+		li {
+			@include font-size(0.8125); // 13px
+			@include transition(background-color, $transition-timer-50ms);
+
+			cursor: pointer;
+			display: block;
+			font-weight: $font-weight-light;
+			transition: none;
+		}
+
+        li a {
+            color: $nav-sec-item-text-color;
+            display: block;
+            padding: 11px $l-spacing-8 10px $l-spacing-8;
+            text-decoration: none;
+        }
+
+		li:hover {
+			background: $nav-sec-item-hover-color;
+			color: $nav-sec-item-hover-text-color;
+		}
+
+		li.active {
+			background: $nav-sec-item-hover-color;
+			color: $nav-sec-item-hover-text-color;
+		}
+	}
+
+	// SECONDARY MENUS WITH SUBHEADER SECTIONS
+	.subheaders {
+		// Second level
+		li {
+		 	padding-left: $l-spacing-21;
+		}
+
+		// First level
+		li.subheader {
+            border-bottom: 1px solid $nav-sec-border-color;
+            color: $color-white;
+			font-family: $font-family-opensans-semibold;
+            font-weight: $font-weight-semibold;
+		 	padding: $l-spacing-21 $l-spacing-8 $l-spacing-8 $l-spacing-8;
+		}
+        li.subheader:hover {
+	        background: $nav-sec-color;
+	        cursor: default;
+        }
+        li.subheader:first-child {
+	        padding-top: $l-spacing-13;
+        }
+
+		// Third level
+		li.subheader-indent {
+		 	padding-left: $l-spacing-34;
+		}
+	}
+}

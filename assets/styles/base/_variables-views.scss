@@ -1,0 +1,84 @@
+// --------------------------------------------------------------------------------
+// VARIABLES - VIEWS	
+// --------------------------------------------------------------------------------
+
+// VIEW - LOGON
+// --------------------------------------------------------------------------------
+$logon-background:							url('https://youngaccountinginc.com/wp-content/themes/ppc-custom/media/background_02.jpg') no-repeat 50% 50% fixed;
+$logon-modal-background:					$color-white;
+$logon-modal-border:						1px solid transparent;
+$logon-modal-box-shadow:					$box-shadow-all-light;
+$logon-title-color: 						$color-gray-700;
+
+
+// VIEW - HOME
+// --------------------------------------------------------------------------------
+$home-page-background: 						$color-gray-25;
+$home-background: 							url('https://annapolispediatrics.com/wp-content/uploads/2016/09/HEADER-billing.jpg') no-repeat center center;
+$home-background-opacity: 					.4;
+$home-background-min-height: 				640px;
+$home-hero-padding: 						55px;										// min: 21px - max: 100px;
+$home-hero-msg-title-font-color: 			$color-gray-700;
+$home-hero-msg-title-font-size:				34px;										// min: 16px - max: 48px
+$home-hero-msg-title-font-weight: 			bold;
+$hero-hero-msg-toc-font-color:				$template-color-secondary;										
+$hero-hero-msg-toc-font-size:				20px;										// min: 14px - max: 34px;
+$hero-hero-msg-toc-font-weight:				light;
+$hero-hero-msg-toc-link-font-weight: 		regular;
+
+
+// VIEW - CONTACT
+// --------------------------------------------------------------------------------
+$customer-overview-font-color: 				$template-font-color;
+
+
+
+
+
+// VIEW - SUBSCRIPTION
+// --------------------------------------------------------------------------------
+$subscription-migration-card-header-background: $color-gray-75;
+$subscription-header-font-size: 			34px;
+$subscription-header-margin: 				10px;
+
+
+// VIEW - INVOICE
+// --------------------------------------------------------------------------------
+$invoice-details-button-font-color: 		$template-font-color;
+$invoice-table-min-width: 					982px;
+
+
+// VIEW - PAYMENT
+// --------------------------------------------------------------------------------
+$payment-confirmation-modal-height: 		224px;
+
+
+
+
+// MODLUE - DATE RANGE PICKER
+// --------------------------------------------------------------------------------
+$daterangepicker-inrange: 					$color-gray-25;
+$daterangepicker-inrange-hover:				$color-gray-75;
+
+
+// MODLUE - FORM
+// --------------------------------------------------------------------------------
+$form-background-color: 					$color-white;
+
+
+// MODLUE - LOGGED IN AS INDICATOR
+// --------------------------------------------------------------------------------
+$logged-in-as-indicator-top: 				-45px;
+$logged-in-as-indicator-right:				0;
+
+
+// MODLUE - MODAL
+// --------------------------------------------------------------------------------
+$modal-font-color: 							$template-font-color;
+
+
+// MODLUE - TABLE
+// --------------------------------------------------------------------------------
+$table-background-color: 					$color-white;
+$table-font-color: 							$template-font-color;
+

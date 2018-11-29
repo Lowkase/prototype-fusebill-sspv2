@@ -1,0 +1,55 @@
+﻿// --------------------------------------------------------------------------------
+// MODULES - TABS
+// --------------------------------------------------------------------------------
+.m-tabs-horizonal {
+
+}
+
+.m-tabs-veritcal {
+
+    .tabs-section {
+        margin-top: $l-spacing-3
+    }
+    .tab-section:first-child {
+        margin-top: 0;
+    }
+
+    .tabs-section-hdr {
+        background: $color-gray-75;
+        padding: $l-spacing-13;
+
+        .selector {
+            @include j-cf();
+
+            input, svg, div {
+                display: block;
+                float: left;
+                margin-right: $l-spacing-8;
+            }
+
+            svg {
+                width: $l-spacing-21;
+                height: $l-spacing-21;
+            }
+
+            div {
+                @include font-size(1); //16px;
+
+                font-weight: $font-weight-semibold;
+            }
+        }
+
+        .description{
+            padding-left: $l-spacing-21;
+        }
+    }
+
+    .tabs-section-hdr-selectable {
+        cursor: pointer;
+    }
+
+    .tabs-section-bdy {
+        padding: $l-spacing-13 33px;
+    }
+
+}

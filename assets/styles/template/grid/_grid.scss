@@ -1,0 +1,146 @@
+﻿.t-grid {
+    @include j-cf();
+
+    > * {
+        width: 100%;
+    }
+
+    input[type=radio],input[type=checkbox] {
+        width: auto;
+    }
+}
+.t-grid-50 {
+    .lft {
+        @include j-column(6/12);
+    }
+
+    .rgt {
+        @include j-column(6/12);
+
+    }
+}
+.t-grid-33-66 {
+    .lft {
+        @include j-column(4/12);
+    }
+
+    .rgt {
+        @include j-column(8/12);
+    }
+}
+
+.t-grid-66-33 {
+    .lft {
+        @include j-column(8/12);
+    }
+
+    .rgt {
+        @include j-column(4/12);
+    }
+}
+
+.t-grid-33 {
+    .lft {
+        @include j-column(4/12);
+    }
+    .mid {
+        @include j-column(4/12);
+    }
+    .rgt {
+        @include j-column(4/12);
+    }
+}
+
+.t-grid-25-50-25 {
+    .lft {
+        @include j-column(3/12);
+    }
+    .mid {
+        @include j-column(6/12);
+    }
+    .rgt {
+        @include j-column(3/12);
+    }
+}
+.t-grid-65-30-5 {
+    .lft {
+        @include j-column(8/12);
+    }
+    .mid {
+        @include j-column(3/12);
+    }
+    .rgt {
+        @include j-column(1/12);
+    }
+}
+
+.t-grid-16-84 {
+    .lft {
+        @include j-column(2/12);
+    }
+    .rgt {
+        @include j-column(10/12);
+    }
+}
+
+.t-grid-8-92 {
+    .lft {
+        @include j-column(1/12);
+    }
+    .rgt {
+        @include j-column(11/12);
+    }
+}
+.t-grid-90-10 {
+    .lft {
+        @include j-column(9/12);
+    }
+    .rgt {
+        @include j-column(3/12);
+    }
+}
+
+.t-grid-25 {
+    .lft {
+        @include j-column(3/12);
+    }
+    .midlft {
+        @include j-column(3/12);
+    }
+     .midrgt {
+        @include j-column(3/12);
+    }
+    .rgt {
+        @include j-column(3/12);
+    }
+
+}
+
+.t-grid-20 {
+    > div {
+        @include j-column(2.4/12);
+    }
+}
+
+.t-grid-relationships {
+    margin-bottom: $l-spacing-13;
+
+    .one {
+        @include j-column(5/100);
+    }
+    .two {
+        @include font-size(1.125); // 18px
+        @include j-column(41.5/100);
+
+        font-weight: $font-weight-semibold;
+    }
+    .three {
+        @include j-column(12/100);
+    }
+    .four {
+        @include font-size(1.125); // 18px
+        @include j-column(41.5/100);
+
+        font-weight: $font-weight-semibold;
+    }
+}

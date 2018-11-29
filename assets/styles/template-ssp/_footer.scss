@@ -1,0 +1,84 @@
+// --------------------------------------------------------------------------------
+// TEMPLATE - FOOTER
+//---------------------------------------------------------------------------------
+footer {
+    @include font-size(0.8750); // 14px
+
+    background: $footer-background;
+    border-top: 1px solid $template-border-color;
+    color: $footer-font-color;
+    padding: $l-spacing-21 $l-spacing-13;
+
+    a {
+        color: $footer-font-color;
+        display: block;
+        text-decoration: none;
+    }
+
+    .footer-grid {
+        @include j-cf();
+
+        > div {
+            @include j-column(3/12, $cycle:4);
+        }
+    }
+
+    .title {
+        font-weight: $font-weight-semibold;
+        margin-bottom: $l-spacing-5;
+    }
+        
+    .company {
+        .terms-conditions {
+            margin-top: $l-spacing-8;
+            text-decoration: underline;
+        }        
+    }
+
+    .emails > a {
+        @include text-truncate();
+    }
+
+    .social {
+        a {
+            display: inline-block;
+            margin-right: $l-spacing-13;
+
+            svg {
+                fill: $footer-social-media-icon-color;
+                height: 32px;
+                width: 32px;
+            }
+        }
+
+        a:hover svg {
+            fill: $footer-social-media-icon-color-hover;
+        }
+
+        a:hover svg:last-child {
+            margin-right: 0;
+        }        
+    }
+
+
+    @media (max-width: 900px) {
+        .footer-grid > div {
+            @include j-column(6/12, $cycle:2);
+        }
+
+        .phone, .social {
+            margin-top: $l-spacing-21;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .footer-grid > div {
+            @include j-column(1, $cycle:1);
+        }
+
+        .emails {
+            margin-top: $l-spacing-21;
+        }    
+    }
+
+}

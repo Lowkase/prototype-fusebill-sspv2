@@ -1,0 +1,27 @@
+﻿.m-table2 {
+    width: 100%;
+
+    th, td {
+        border-bottom: 1px solid $color-border;
+        border-right: 1px solid $color-border;
+        text-align: left;
+        vertical-align: top;
+    }
+    th:last-child, td:last-child {
+        border-right: none;
+    }
+    th, td {
+        padding: $l-spacing-8 $l-spacing-13;
+    }
+}
+
+.m-table {
+    @include j-cf();
+    
+    .hdr {
+
+    }
+    .bdy {
+
+    }
+}

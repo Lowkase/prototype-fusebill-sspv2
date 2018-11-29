@@ -1,0 +1,26 @@
+// --------------------------------------------------------------------------------
+// MODULES - PAGINATION
+// --------------------------------------------------------------------------------
+#formTableNavigation .btn {
+	@include font-size(0.75); // 12px
+    padding: $l-spacing-3 $l-spacing-5;
+}
+
+#formTableNavigation .input-append select {
+    height: 28px;
+}
+
+#formTableNavigation .input-append input {
+	padding-top: $l-spacing-13;
+	padding-bottom: $l-spacing-13;
+}
+
+#formTableNavigation .input-append button {
+	background: $button-primary-background-color;
+	color: $button-primary-font-color;
+}
+
+#formTableNavigation .input-append button:hover {
+	background: $button-primary-background-color-hover;
+	color: $button-primary-font-color-hover;
+}

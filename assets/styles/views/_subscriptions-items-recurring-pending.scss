@@ -1,0 +1,124 @@
+// --------------------------------------------------------------------------------
+// VIEW - SUBSCRIPTIONS ITEMS - RECURRING PENDING
+//---------------------------------------------------------------------------------
+.v-subscriptions-items-recurring-pending {
+
+	.items-recurring-pending-form {
+		.m-card-hdr > div:last-child {
+			@include font-size(0.8750); // 14px
+		}
+	}
+
+
+	.m-table {
+
+		.hdr, .row {
+			@include j-cf();
+
+			border-bottom: 1px solid $template-border-color;
+
+			> div:nth-child(1) {
+				@include j-cf();
+				@include j-span(.9);
+
+				border-right: 1px solid $template-border-color;
+
+				> div {
+					@include j-span(.2);
+
+					border-right: 1px solid $template-border-color;
+					line-height: 20px;
+					height: 40px;
+					padding: $l-spacing-8 $l-spacing-13;
+
+					.label {
+						display: none;
+					}
+				}
+				> div:last-child {
+					border-right: 0;
+				}	
+			}	
+			> div:nth-child(2) {
+				@include j-span(.1);
+
+				line-height: 20px;
+				padding: $l-spacing-8 $l-spacing-13;
+			}
+
+
+		}
+
+		.hdr {
+			font-weight: $font-weight-semibold;
+		}
+
+		.row {
+			> div:nth-child(2) {
+				text-align: center;
+
+				> * {
+					color: $template-color-secondary;
+					cursor: pointer;
+					display: inline-block;
+					font-weight: $font-weight-semibold;
+					padding: 0 $l-spacing-8;
+					text-decoration: none;
+				}	
+			}
+		}
+		.row:last-child {
+			border-bottom: 0;
+		}
+
+		@media (max-width: 1024px) {
+	    	.hdr {
+	    		display: none;
+	    	}
+
+	    	.row {
+
+				> div:nth-child(1) {
+					@include j-cf();
+					@include j-span(.8);
+
+					> div {
+						
+						//@include j-span(1);
+
+						@include j-span(6/12, $cycle:2)
+
+					
+						border-right: 0;
+						height: auto;
+
+						.label {
+							display: block;
+						}
+					}
+				}	
+				> div:nth-child(2) {
+					@include j-span(.2);
+
+					> a, > div {
+						height: auto;
+					}	
+				}
+
+			}
+		}
+
+		@media (max-width: 460px) {
+	    	.row {
+
+				> div:nth-child(1) {
+
+					> div {
+						@include j-span(1);
+					}
+				}	
+			}
+		}
+	}	
+
+}

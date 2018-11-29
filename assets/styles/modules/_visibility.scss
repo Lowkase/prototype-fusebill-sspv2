@@ -1,0 +1,12 @@
+// --------------------------------------------------------------------------------
+// MODULES - VISIBILITY
+// --------------------------------------------------------------------------------
+.m-visibility-visually-hidden {
+	@include transition (all $transition-timer-200ms $transition-easeInOutQuad);
+	visibility: hidden;
+}
+
+.m-visibility-hide {
+	@include transition (all $transition-timer-200ms $transition-easeInOutQuad);
+    display: none;
+}

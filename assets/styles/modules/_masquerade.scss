@@ -1,0 +1,59 @@
+// --------------------------------------------------------------------------------
+// MODULE - MASQUERADE
+// --------------------------------------------------------------------------------
+#masquerade-modal {
+    display: none;
+}
+
+.m-masquerade {
+	@include bubble(
+		$width: 260px, 
+		$height: 524px, 
+		$side: left-bottom, 
+		$side-width: 143px, 
+		$side-height: 90px, 
+		$triangle-offset: 37px, 
+		$background-color: $color-gray-50,
+		$triangle-color: $color-gray-50,
+		$top: 33px,
+		$left: 56px,
+		$side-color: transparent
+	);
+
+	background: $color-gray-50;
+
+	.icon {
+		@include border-top-radius( $l-spacing-3 );
+		background: $color-white;
+		border-bottom: 1px solid $color-border;
+		height: 66px;
+		padding: $l-spacing-13;
+
+		svg {
+			display: block;
+			fill: $color-red;
+			margin: 0 auto;
+			width: 40px;
+		}
+	}
+
+	.body {
+		padding: $l-spacing-13;
+
+        .ctrl {
+            margin-bottom: $l-spacing-21;
+        }
+
+		.lbl-value label {
+			@include font-size(0.75); // 12px
+		}
+	}
+
+	.actions {
+		@include j-cf();
+
+		> button {
+			float: right;
+		}
+	}
+}

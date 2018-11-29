@@ -1,0 +1,36 @@
+// --------------------------------------------------------------------------------
+// VARIABLES - TEMPLATE
+// --------------------------------------------------------------------------------
+
+// TEMPLATE ABSTRACTION - SSP
+// --------------------------------------------------------------------------------
+$template-border-color: 					$color-gray-100;
+$template-font: 							"Segoe UI", "Helvetica Neue", Arial, sans-serif;
+$template-font-color:						$color-gray-900;
+$template-h-color: 							$color-gray-900;
+
+$template-color-primary: 					$color-orange;
+$template-color-primary-hover: 				$color-orange-hover;
+$template-color-secondary: 					$color-blue;
+$template-color-secondary-hover: 			$color-blue-hover;	
+$template-color-neutral: 					$color-gray-50;
+$template-color-neutral-hover: 				$color-gray-100;
+$template-color-disabled: 					$color-gray-200;
+
+
+// ADMIN SCSS BACKWARD COMPATIBILITY - OVERRIDEABLE
+// --------------------------------------------------------------------------------
+$l-border-radius:                       	2px;	
+$l-header-common-height-small:				42px;
+
+
+// ADMIN SCSS BACKWARD COMPATIBILITY - NOT OVERRIDEABLE
+// --------------------------------------------------------------------------------
+$color-border: 								$template-border-color;
+$color-border-hover: 						$template-border-color;
+$color-button-primary: 						$template-color-primary;
+$color-button-primary-hover:				$template-color-primary-hover;
+$color-button-secondary: 					$template-color-secondary;
+$color-button-secondary-hover:				$template-color-secondary-hover;
+$color-button-nuetral: 						$template-color-neutral;
+$color-button-nuetral-hover: 				$template-color-neutral-hover;

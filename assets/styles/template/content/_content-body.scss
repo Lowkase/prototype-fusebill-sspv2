@@ -1,0 +1,13 @@
+﻿// --------------------------------------------------------------------------------
+// TEMPLATE - CONTENT - BODY
+// --------------------------------------------------------------------------------
+
+// CONTAINER FOR CONTENT BODY
+.t-view-content-body {
+	@include position(absolute, $top:$l-header-common-height-medium, $right:0, $bottom:0, $left:0);
+	
+	background: $color-white;
+	color: $color-gray-900;
+	overflow-y: none;
+	overflow-x: none;
+}

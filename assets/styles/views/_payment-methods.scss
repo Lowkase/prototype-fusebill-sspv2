@@ -1,0 +1,160 @@
+// --------------------------------------------------------------------------------
+// VIEW - PAYMENT METHODS
+//---------------------------------------------------------------------------------
+.v-payment-methods {
+
+	.m-actions-list {
+		margin-bottom: $l-spacing-21;
+	}
+
+	.m-table {
+		svg {
+			height: 20px;
+		}
+
+		.hdr, .row {
+			@include j-cf();
+
+			> div {
+				border-right: 1px solid $template-border-color;
+				height: 36px;
+				line-height: 20px;
+				padding: $l-spacing-8 $l-spacing-13;
+			}
+
+			> div:nth-child(1) {
+				@include j-span(7/12);
+			}
+
+			> div:nth-child(2) {
+				@include j-span(2/12);
+
+				text-align: center;
+			}
+
+			> div:nth-child(3) {
+				@include j-span(3/12);
+
+				text-align: center;
+			}
+
+			> div:last-child {
+				border-right: 0;
+			}
+		}
+
+		.hdr {
+			border-bottom: 1px solid $template-border-color;
+			font-weight: $font-weight-semibold;
+		}
+
+		.row {
+			border-bottom: 1px solid $template-border-color;
+
+			> div:nth-child(1) {
+				.payment-method {
+					@include j-cf();
+
+					.payment-method-icon {
+						float: left;
+						margin-right: $l-spacing-8;
+					}
+
+					.payment-method-text {
+						@include j-cf();
+
+						color: $color-gray-900;
+						cursor: pointer;
+						display: block;
+						float: left;
+
+						> div {
+							float: left;
+							margin-right: $l-spacing-3;
+						}
+
+						> div:last-child {
+							margin-right: 0;
+						}
+					}
+				}
+
+				.payment-method-default {
+					display: none;
+					font-style: italic;
+					margin-top: $l-spacing-8;
+				}
+
+				.payment-mobile-actions {
+					@include j-cf();
+
+					display: none;
+					margin-top: $l-spacing-13;
+
+					> * {
+						color: $template-color-secondary;
+						font-weight: $font-weight-semibold;
+						float: right;
+						padding: 0 $l-spacing-8;
+						text-decoration: none;
+					}
+				}
+			}
+
+			> div:nth-child(3) {
+				@include font-size(0.8125); // 13px
+
+				> * {
+					color: $template-color-secondary;
+					cursor: pointer;
+					display: inline-block;
+					font-weight: $font-weight-semibold;
+					padding: 0 $l-spacing-8;
+					text-decoration: none;
+				}
+			}			
+		}
+		.row:last-child {
+			border-right: 0;
+		}
+
+
+	    @media (max-width: 640px) {
+	    	.hdr {
+	    		display: none;
+	    	}
+
+	    	.row {
+	  			> div:nth-child(1) {
+					@include j-span(12/12);
+				}
+
+				> div:nth-child(2) {
+					display: none;
+				}
+
+				> div:nth-child(3) {
+					display: none;
+				}  		
+	    	}
+
+			.row {
+				> div {
+					border-right: 0;
+					height: auto;
+				}						
+
+				> div:nth-child(1) {
+					.payment-method-default {
+						display: block;
+					}
+
+					.payment-mobile-actions {
+						display: block;
+					}
+				}
+			}
+	    }	
+	}
+
+}

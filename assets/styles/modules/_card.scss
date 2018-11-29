@@ -1,0 +1,258 @@
+﻿// --------------------------------------------------------------------------------
+// MODULES - CARD
+// --------------------------------------------------------------------------------
+
+
+
+.m-card-mobile {
+    @include transition (all $transition-timer-400ms $transition-easeInOutQuad);
+
+    background: $color-white;
+    box-shadow: $box-shadow-right-bottom;
+
+//    a {
+//        text-transform: uppercase;
+//    }
+
+    .m-card-hdr {
+        @include font-size(1.125); // 18px
+        @include text-truncate();
+
+        background: $color-gray-50;
+        font-weight: $font-weight-regular;
+        padding: $l-spacing-8 $l-spacing-13;
+    }
+
+    .m-card-bdy {
+        border: 1px solid $color-border;
+        padding: $l-spacing-13;
+    }
+
+    .m-card-bdy-no-padding {
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+// M-CARD
+// --------------------------------------------------------------------------------
+.m-card {
+	@include transition (all $transition-timer-400ms $transition-easeInOutQuad);
+
+	background: $color-white;
+	box-shadow: $box-shadow-right-bottom;
+	height: 300px;
+	position: relative;
+
+    a {
+        text-transform: uppercase;
+    }
+
+	.m-card-hdr {
+		@include position(absolute, $top:0, $right:0, $left:0);
+		@include font-size(1.125); // 18px
+		@include text-truncate();
+
+        background: $color-gray-50;
+		border-bottom: 1px solid $color-border;
+		font-weight: $font-weight-regular;
+		height: $l-header-common-height-small;
+		padding: $l-spacing-8 $l-spacing-13;
+
+        .rgt {
+            text-align: right;
+            @include font-size(0.8125);
+        }
+	}
+
+	.m-card-bdy {
+		@include position(absolute, $top:$l-header-common-height-small, $right:0, $bottom:0, $left:0);
+
+        ul {
+            @extend .base-element-ui;
+        }
+
+        li a:hover {
+           	text-decoration: underline;
+        }
+	}
+}
+
+
+// M-CARD-GRAY
+// Used on customer dashbaord
+// --------------------------------------------------------------------------------
+.m-card-gray {
+    background: $color-gray-50;
+    height: auto;
+
+    .m-card-hdr {
+        @include position-relative-reset();
+
+        svg, .title {
+            float: left;
+            margin-right: $l-spacing-8;
+        }
+
+        svg {
+            height: $l-spacing-21;
+            width: $l-spacing-21;
+        }
+    }
+
+    .m-card-bdy {
+        @include position-relative-reset();
+
+        .m-card-bdy-section {
+            border-bottom: 1px solid $color-border;
+            padding: $l-spacing-8 $l-spacing-13;
+        }
+        .m-card-bdy-section:last-child {
+            border-bottom: none;
+        }
+        .m-card-bdy-section-big-padding {
+            padding: $l-spacing-13;
+        }
+        .m-card-bdy-section-no-padding {
+            padding: 0;
+        }
+
+        .section-identifier {
+            @include font-size(0.625); // 10px
+
+            color: $color-gray-300;
+        }
+
+        svg {
+            width: $l-spacing-13;
+            height: $l-spacing-13;
+        }
+
+        .rgt {
+            text-align: right;
+        }
+
+        .card-gray-action {
+            @include font-size(0.8125); // 13px
+        }
+
+        .tags {
+            @include j-cf();
+
+            > div {
+                //max-width: 130px;
+                float: left;
+                margin-right: $l-spacing-13;
+            }
+        }
+    }
+}
+
+
+// M-CARD-WITH-COUNTERS
+// Used on customer dashbaord
+// --------------------------------------------------------------------------------
+.m-card-with-counters {
+    height: 181px;
+
+    a:focus {
+        text-decoration: none !important;
+    }
+
+    .m-card-bdy {
+        padding-top: $l-spacing-21;
+        padding-bottom: $l-spacing-21;
+
+        .lft:hover, .mid:hover, .rgt:hover {
+            background: $color-gray-50;
+        }
+    }
+
+	.m-card-bdy-count {
+    	text-align: center;
+
+        > div:first-child {
+            color: $color-gray-900;
+        }
+
+        > div:last-child {
+		    @include font-size(3); // 48px
+
+		    color: $color-blue;
+            line-height: 1;
+        }
+	}
+	.m-card-bdy-count:hover {
+        text-decoration: none;
+	}
+
+    .m-card-ftr a {
+		@include font-size(0.8125);	// 13px
+		@include position(absolute, $right:$l-spacing-13, $bottom:$l-spacing-13);
+
+		color: $color-orange;
+        text-transform: uppercase;
+    }
+
+}
+
+
+// M-CARD-WITH-GRID
+// Used on customer dashbaord
+// --------------------------------------------------------------------------------
+.m-card-with-grid {
+    height: 243px;
+
+    .m-card-bdy {
+        .t-grid-50 {
+            border-bottom: 1px solid $color-border;
+        }
+
+        .t-grid-50:last-child {
+            border-bottom: 0;
+        }
+
+        .lft, .rgt {
+            height: 100px;
+            position: relative;
+            text-align: center;
+        }
+
+        .lft {
+            border-right: 1px solid $color-border;
+        }
+
+        .m-card-cell-hdr {
+            a {
+		        @include font-size(0.6875); // 11px
+                @include position(absolute, $right:$l-spacing-13, $top:$l-spacing-8);
+
+                padding-top: 0;
+                text-transform: uppercase;
+	        }
+        }
+
+        .m-card-cell-bdy {
+            .m-card-bdy-count {
+                display: inline-block;
+                padding-top: 40px;
+            }
+        }
+
+        .m-card-cell-ftr {
+            a {
+                @include font-size(0.6875); // 11px
+                @include position(absolute, $right:$l-spacing-13, $bottom:$l-spacing-8);
+
+		        color: $color-orange;
+                text-transform: uppercase;
+	        }
+        }
+
+    }
+
+}

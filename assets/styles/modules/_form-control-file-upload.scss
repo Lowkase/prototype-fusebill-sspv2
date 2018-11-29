@@ -1,0 +1,52 @@
+﻿// --------------------------------------------------------------------------------
+// MODULES - FORM CONTROL - FILE UPLOAD
+// --------------------------------------------------------------------------------
+.m-form-control-file-upload {
+	@include j-cf();
+
+	.lft {
+		@include j-column(9/12);
+	
+		position: relative;
+		overflow: hidden;
+	}
+
+	.rgt {
+		@include j-column(3/12);	
+	}
+
+    .upload-file-new {
+    	padding-right: 100px;
+    }
+
+    .upload-file-old {
+		@include position(absolute, $top:0, $right:-1px);
+
+	    cursor:pointer;
+	    height: 36px;   
+		margin: 0;
+	    padding: 0;
+	    width: 95px;
+    }
+
+    .m-button {
+    	border-radius: 0;
+	    height: 36px;
+	    position: relative;
+
+		input {
+			@include position(absolute, $top:0, $right:-1px);
+
+			margin: 0;
+		    opacity: 0;
+		    padding: 0;
+		    width: 95px;
+		    height: 36px;
+		}
+
+		span {
+			display: inline-block;
+		}
+
+    }
+}

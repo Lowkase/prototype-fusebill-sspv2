@@ -1,0 +1,35 @@
+﻿// --------------------------------------------------------------------------------
+// MODULES - STATUS
+// --------------------------------------------------------------------------------
+.m-status {
+    @include font-size(0.6875); // 11px 
+
+    background: $color-gray-300;
+    border-radius: $l-border-radius;
+    box-shadow: $box-shadow-right-bottom-light;
+    color: $color-white;
+    display: inline-block;
+    padding: $l-spacing-2 $l-spacing-8;
+    text-align: center;
+    text-transform: uppercase;
+
+    &.m-status-success {
+        background: $color-green;
+    }
+
+    &.m-status-inverse {
+        background: $color-black;
+    }
+
+    &.m-status-info {
+        background: $color-blue;
+    }
+
+    &.m-status-important {
+        background: $color-red;
+    }
+
+    &.m-status-warning {
+        background: $color-yellow;
+    }
+}

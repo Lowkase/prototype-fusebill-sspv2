@@ -1,0 +1,54 @@
+// --------------------------------------------------------------------------------
+// VARIABLES - SECTIONS	
+// DO NOT REMOVE values that have a prefix of '$template-''.  Values defined
+// by '$template-' variables can only be changed in the variables-template file.
+// --------------------------------------------------------------------------------
+
+// SECTIONS - HEADER
+// --------------------------------------------------------------------------------
+$template-header-height: 					72px;										// fixed value
+$template-header-logo-height: 				36px;										// fixed value
+$template-header-logo-width: 				auto;										// fixed value
+
+$header-background:							$color-white;
+$header-svg-color: 							$template-color-primary;					// if the logo is an SVG we can color it using the fill attribute
+$header-title-font-color: 					$template-font-color;
+
+
+// SECTIONS - NAV
+// --------------------------------------------------------------------------------
+$nav-hamburger-color: 						$template-color-secondary;
+$nav-hamburger-color-hover:					$template-color-secondary-hover;
+
+
+// SECTIONS - NAV ITEMS
+// --------------------------------------------------------------------------------
+$nav-items-active: 							$template-color-secondary;
+$nav-items-active-font-color: 				$color-white;
+$nav-items-font-color: 						$color-gray-900;
+$nav-items-height:							343px;
+
+
+// SECTIONS - BREADCRUMBS
+// --------------------------------------------------------------------------------
+$template-breadcrumbs-height: 				31px;										// fixed value
+
+
+// SECTIONS - CONTENT
+// --------------------------------------------------------------------------------
+$content-background:						$color-white;
+$content-font-color: 						$template-font-color;
+
+
+// SECTIONS - FOOTER
+// --------------------------------------------------------------------------------
+$footer-background: 						$color-gray-25;
+$footer-font-color: 						$template-font-color;
+$footer-social-media-icon-color: 			$color-gray-400;
+$footer-social-media-icon-color-hover:		$color-gray-600;
+
+
+// SECTIONS - ACTIONS
+// --------------------------------------------------------------------------------
+$template-actions-background: 				$color-white;								// fixed value
+$template-actions-height: 					50px;										// fixed value

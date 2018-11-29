@@ -1,0 +1,74 @@
+﻿// --------------------------------------------------------------------------------
+// TEMPLATE - CONTENT - HEADER
+// --------------------------------------------------------------------------------
+
+// HEADER FOR CONTENT CONTAINER
+.t-view-content-header {
+	@include position(absolute, $top:0, $right:0, $left:0);
+	@include j-cf();
+
+	background: $color-white;
+	border-bottom: 1px solid $color-border;
+	height: $l-header-common-height-medium;
+
+	.title {
+		@include font-size(1.125); // 18px
+		@include j-column(.70);
+		@include text-truncate();
+
+		font-family: $font-family-opensans-regular;
+		font-weight: $font-weight-semibold;
+		padding: 15px $l-spacing-8 $l-spacing-13 $l-spacing-13;
+	}
+
+	.actions {
+		@include j-column(.30);
+		@include j-cf();
+
+		padding: 7px $l-spacing-13 0 0;
+
+		.icon {
+            @include j-cf();
+
+			cursor: pointer;
+			margin-right: $l-spacing-13;
+            padding-top: $l-spacing-8;
+            
+			svg {
+				@include transition(all, $transition-timer-200ms $transition-easeInOutQuad);
+
+				display: block;
+				fill: $color-gray-800;
+                float: left;
+				height: 25px;
+				width: 25px;
+			}
+
+            .svg-text {
+                float: left;
+                margin-left: $l-spacing-8;
+            }
+		}
+
+		.icon:hover {
+			svg {
+				fill: $color-blue-hover;
+			}
+
+            .svg-text {
+                color: $color-blue-hover;
+            }
+		}
+
+		.include {
+			@include font-size(0.75); // 12px
+
+			margin-top: $l-spacing-8;
+
+			input {
+				margin: 0 $l-spacing-3 0 0;
+			}
+		}	
+	}
+	
+}

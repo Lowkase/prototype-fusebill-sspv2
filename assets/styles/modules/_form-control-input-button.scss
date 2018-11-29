@@ -1,0 +1,14 @@
+// --------------------------------------------------------------------------------
+// MODULES - FORM CONTROL - INPUT BUTTON
+// --------------------------------------------------------------------------------
+.m-form-control-input-button {
+	@include j-cf();
+
+    > div, > .m-button {
+        float: left;
+    }
+
+    > div {
+        margin-right: $l-spacing-8;
+    }
+}

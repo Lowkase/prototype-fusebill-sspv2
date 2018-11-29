@@ -1,0 +1,60 @@
+// --------------------------------------------------------------------------------
+// VIEW - SUBSCRIPTION
+//---------------------------------------------------------------------------------
+.v-subscription {
+
+	.subscription-item {
+		@include j-column(3/12, $cycle:4);
+
+		min-height: 317px;
+
+		@media (max-width: 1360px) {
+			@include j-column(4/12, $cycle:3);
+		}
+		
+		@media (max-width: 1024px) {
+			@include j-column(6/12, $cycle:2);
+		}
+
+		@media (max-width: 680px) {
+			@include j-column(1, $cycle:1);
+		}
+
+		.title {
+			@include text-truncate();
+		}
+
+		.m-status {
+			padding: $l-spacing-5 $l-spacing-13;
+		}
+
+		.recharge-date, .expiry-date {
+			@include j-cf();
+
+			.lft {
+				@include j-column(8/12);
+			}
+			.rgt {
+				@include j-column(4/12);
+
+				.m-button {
+					float: right;
+					margin-top: 5px;
+				}
+			}
+		}
+
+		.subscription-actions-primary {
+			margin-top: $l-spacing-8;
+
+			&.subscription-actions-primary-without-cancel {
+				margin-top: 51px;
+			}			
+		}
+
+		.subscription-actions-secondary {
+			margin-top: $l-spacing-13;
+		}
+	}
+
+}

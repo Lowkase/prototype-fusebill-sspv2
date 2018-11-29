@@ -1,0 +1,100 @@
+// --------------------------------------------------------------------------------
+// VIEW - SUBSCRIPTIONS DETAILS
+//---------------------------------------------------------------------------------
+.v-subscriptions-details {
+
+	.subscription-detail-form {
+		.m-form-grid-row-header .title {
+			width: 100%;
+		}
+
+		.m-status {
+			padding: $l-spacing-8;
+		}
+
+	}
+
+	.subscription-info {
+		@include j-cf();
+
+		.col-1 {
+			@include j-cf();
+			@include j-span(8/12);
+
+			.col-1-1 {
+				@include j-span(6/12);
+			}
+
+			.col-1-2 {
+				@include j-span(6/12);
+			}
+
+		}
+
+		.col-2 {
+			@include j-span(4/12);
+		}
+
+		@media (max-width: 600px) {
+			.col-1 {
+				@include j-span(6/12);
+
+				.col-1-1 {
+					@include j-span(1);
+				}
+
+				.col-1-2 {
+					@include j-span(1);
+
+					margin-top: $l-spacing-21;
+				}
+
+			}
+
+			.col-2 {
+				@include j-span(6/12);
+			}
+		}
+
+		@media (max-width: 400px) {
+			.col-1 {
+				@include j-span(1);
+			}
+
+			.col-2 {
+				@include j-span(1);
+
+				margin-top: $l-spacing-21;
+			}
+		}
+	}
+
+    .recurring-pending-purchases {
+        padding-top: $l-spacing-8;
+
+        .recurring-pending, .purchases {
+            cursor: pointer;
+            padding: $l-spacing-8 0 $l-spacing-21 0;
+            text-align: center;
+
+            > div:first-child {
+                @include font-size(2.2500); // 36px
+            }
+
+            > div:last-child {
+                @include font-size(0.8125); // 13px
+            }
+        }
+        .recurring-pending:hover, .purchases:hover {
+            background: $color-gray-100;
+        }
+
+        .recurring-pending {
+            border-right: 1px solid $template-border-color;
+        }
+
+        .purchases {
+
+        }
+    }
+}

@@ -1,0 +1,36 @@
+// --------------------------------------------------------------------------------
+// MODULES - FORM CONTROL - DATE
+// --------------------------------------------------------------------------------
+.m-form-control-date {
+	@include j-cf();
+
+    input, > div {
+        float: left;
+    }
+
+    input {
+        cursor: pointer;
+        width: inherit !important;
+    }
+
+    > div {
+        @include transition (all $transition-timer-400ms $transition-easeInOutQuad);
+
+        background: $color-gray-50;
+        border: 1px solid $color-border;
+        border-left: 0;
+        cursor: pointer;
+        padding: 7px $l-spacing-8 $l-spacing-2 $l-spacing-8;
+    }
+
+    > div:hover {
+        background: $color-gray-100;
+    }
+
+    svg {
+        height: 20px;
+        width: 20px;
+
+    }
+
+}

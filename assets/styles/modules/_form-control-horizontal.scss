@@ -1,0 +1,38 @@
+﻿// --------------------------------------------------------------------------------
+// MODULES - FORM CONTROL HORIZONTAL
+// --------------------------------------------------------------------------------
+.m-form-control-horizontal {
+	@include j-cf();
+
+	border-bottom: 1px solid $color-border;
+	margin-bottom: $l-spacing-21;
+
+	.lbl {
+		@include j-column(3/12);
+		padding-bottom: $l-spacing-3;
+		padding-top: $l-spacing-8;
+	}
+
+	.input {
+		@include j-column(9/12);
+		width: 50%;
+	}
+
+	.input input {
+		width: 100%;
+	}
+
+	.input-sub-form .ctrl-horizontal {
+		border-bottom: 0;
+	}
+
+	input[type='checkbox'] {
+		margin-top: 14px;
+		margin-bottom: 9px;
+	}
+
+	input[type='text'] {
+		padding-left: $l-spacing-8;
+		padding-right: $l-spacing-8;
+	}
+}

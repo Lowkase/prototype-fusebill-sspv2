@@ -1,0 +1,170 @@
+// --------------------------------------------------------------------------------
+// MODULES - ACTIONS
+// --------------------------------------------------------------------------------
+
+// BUTTON LIST
+.m-actions-list {
+	@include j-cf();
+	@extend .base-element-ui;
+
+	list-style-type: none;
+	margin: 0; 
+	padding: 0;
+
+    li.action-text {
+        padding-top: $l-spacing-6;
+    }
+}
+
+.m-actions-list-left {
+    @extend .base-element-ui;
+
+	li {
+		float: left;
+		margin-right: $l-spacing-8;
+	}
+}
+
+.m-actions-list-right {
+    @extend .base-element-ui;
+
+	li {
+		float: right;
+		margin-left: $l-spacing-8;
+	}
+}
+
+.m-actions-list-center {
+    @extend .base-element-ui;
+
+	text-align: center;
+
+	li {
+		display: inline-block;
+		margin-right: $l-spacing-21;
+	}
+
+	li:last-child {
+		margin-right: 0;	
+	}
+}
+
+
+// BULK ACTIONS CONTAINER
+.m-actions-list-bulk {
+    @extend .base-element-ui;
+
+	li {
+		float: left;
+	}
+
+	li.arrow {
+		padding-left: $l-spacing-3;
+		padding-top: 16px;
+		text-align: center;
+		width: 4%;
+
+		svg {
+			fill: $color-gray-900;
+			height: 20px;
+		}
+	}
+}
+
+
+// MULTI-STATUS CONTAINER
+.m-actions-list-multi-status {
+    @extend .base-element-ui;
+
+	li {
+		float: left;
+	}
+    li:last-child {
+         
+    }
+
+    .m-status {
+        border-radius: 0;
+
+        @include border-left-radius($l-border-radius);
+    }
+
+    .m-button {
+        border-radius: 0;
+
+        @include border-right-radius($l-border-radius);
+        @include font-size(0.625);
+
+        border: 1px solid $color-gray-800 !important;
+        display: block;
+        padding: $l-spacing-2 $l-spacing-8 0 $l-spacing-8;
+    }
+}
+
+
+// MULTI ACTION DROPDOWN
+.m-actions-dropdown  {
+	@include transition(all $transition-timer-200ms $transition-easeInOutQuad);
+
+    @extend .base-element-ui;
+
+	background: $color-gray-50;
+	border: 1px solid $color-border;
+	box-shadow: $box-shadow-all-light;
+	position: relative;
+	height: $l-input-height;
+	margin-bottom: 0;
+	min-width: 100px;
+	width: 100%;
+
+	.ctrl-select {
+		@include position(absolute, $top:0, $right:34px, $bottom:0, $left:0);
+
+		background: $color-white;
+		border: 0;
+		height: $l-input-height - 2;
+
+		select {
+			@include font-size(0.8125); // 13px
+
+			border:0;
+			height: $l-input-height - 2;
+		}
+	}
+
+	.go {
+		//@include font-size(0.875); // 14px
+		@include position(absolute, $top:0, $right:0, $bottom:0);
+		@include transition(all $transition-timer-200ms $transition-easeInOutQuad);
+
+		border-left: 1px solid $color-border;
+		cursor: pointer;
+		font-weight: $font-weight-semibold;
+		height: $l-input-height - 2;
+		padding-top: 7px;
+		text-align: center;			
+		width: 34px;
+	}
+}
+
+.m-actions-dropdown:hover {
+    border: 1px solid $color-border-hover;
+    box-shadow: $box-shadow-all-medium;
+
+	.ctrl-select {
+		border: 0;
+	}
+
+	.go:hover {
+		background: $color-blue;
+		color: $color-white;
+	}  
+}
+
+#alerts-placeholder {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    z-index: 999;
+}

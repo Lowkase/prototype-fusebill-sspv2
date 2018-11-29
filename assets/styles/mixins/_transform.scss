@@ -1,0 +1,17 @@
+// --------------------------------------------------------------------------------
+// MIXINS - TRANSFORMS
+// --------------------------------------------------------------------------------
+@mixin transform($x: 0deg, $y: 0deg, $style: preserve-3d, $backface: hidden) {
+    backface-visibility: $backface;
+    -webkit-transform: rotateX($x);
+    -webkit-transform: rotateY($y);
+    -webkit-transform-style: $style;
+
+    -ms-transform: rotateX($x);
+    -ms-transform: rotateY($y);
+    -ms-transform-style: $style;
+
+    transform: rotateX($x);
+    transform: rotateY($y);
+    transform-style: $style;
+}

@@ -1,0 +1,59 @@
+// --------------------------------------------------------------------------------
+// MODULES - DOWNLOAD PROGRESS
+// --------------------------------------------------------------------------------
+.m-download-progress {
+    @include j-cf();
+
+    margin-bottom: $l-spacing-8;
+
+    > * {
+        float: right;
+    }
+    
+    .icon {
+        @include j-cf();
+
+		cursor: pointer;
+		margin-right: $l-spacing-13;
+        padding-top: $l-spacing-8;
+            
+		svg {
+			@include transition(all, $transition-timer-200ms $transition-easeInOutQuad);
+
+			display: block;
+			fill: $color-gray-800;
+            float: left;
+			height: 30px;
+			width: 30px;
+		}
+
+        .svg-text {
+            float: left;
+            margin-left: $l-spacing-8;
+        }
+	}
+
+	.icon:hover {
+		svg {
+			fill: $color-blue-hover;
+		}
+
+        .svg-text {
+            color: $color-blue-hover;
+        }
+	}
+
+    .m-download-progress-option {
+        cursor: pointer;
+        margin-left: $l-spacing-8;
+        margin-right: $l-spacing-13;
+    }
+
+    .m-download-progress-option, .m-download-progress-options {
+        padding-top: $l-spacing-8;
+    }
+
+    .m-download-progress-options .control-group {
+        margin-bottom: 0;
+    }
+}

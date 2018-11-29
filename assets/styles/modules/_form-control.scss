@@ -1,0 +1,43 @@
+// --------------------------------------------------------------------------------
+// MODULES - FORM CONTROL - GENERIC
+// --------------------------------------------------------------------------------
+.m-form-control {
+	margin-bottom: $l-spacing-21;
+}
+
+.m-form-control-back-to {
+    margin-bottom: $l-spacing-21;
+}
+
+.m-form-control-full-width {
+	width: 100%;	
+}
+
+.m-form-control-label-with-description {
+	> span {
+		display: block;
+	}
+
+	span:last-child {
+		@include font-size(0.6875); // 11px
+	}
+}
+
+.m-form-box {
+    box-shadow: $box-shadow-right-bottom;
+    padding: $l-spacing-21;
+
+    .title {
+        @include font-size(1); // 20px
+    }
+}
+
+.disabled {
+    color: $color-gray-400;
+    opacity: 0.5;
+
+    input[type=text] {
+        border: $color-gray-400;
+        opacity: 0.5;
+    }
+}

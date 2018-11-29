@@ -1,0 +1,79 @@
+﻿// --------------------------------------------------------------------------------
+// MODULES - CARD - SETTINGS
+// --------------------------------------------------------------------------------
+.m-card-settings {
+	@include transition (all $transition-timer-400ms $transition-easeInOutQuad);
+	@include j-cf();
+
+	background: $color-gray-50;
+	box-shadow: $box-shadow-right-bottom;
+	margin-bottom: $l-spacing-21;
+    //min-height: 84px;
+	position: relative;
+
+	.m-card-settings-content {
+		@include j-span(.8);
+
+		padding: $l-spacing-8;
+	}
+
+	.m-card-settings-title {
+        @include font-size(1); // 16px
+
+		font-weight: $font-weight-semibold;
+		margin-bottom: $l-spacing-8;
+	}
+
+	.m-card-settings-description {
+		@include font-size(0.8125);	// 13px		
+		font-weight: $font-weight-regular;
+	}
+
+	.m-card-settings-status {
+		@include font-size(0.8125);	// 13px		
+		@include position(absolute, $top:0, $right:10%, $bottom:0);
+
+		border-left: 1px solid $color-border;
+		text-align: center;
+		width: 10%;
+
+		p {
+			@include position(absolute, $top:0, $right:0, $bottom:0, $left:0);
+
+			height: 21px;
+			margin: auto;
+			width: 100%;
+		}
+
+		p.positive {
+			color: $color-green;
+		}
+	}
+
+	.m-card-settings-nav {
+		@include position(absolute, $top:0, $right:0, $bottom:0);
+
+		border-left: 1px solid $color-border;
+		cursor: pointer;
+		width: 10%;
+
+		a {
+			display: block;
+		}
+
+		svg {
+			@include position(absolute, $top:0, $right:0, $bottom:0, $left:0);
+
+			fill: $color-blue;
+			height: 30px;
+			margin: auto;
+			width: 20px;
+		}
+	}
+	.m-card-settings-nav:hover {
+		background: $color-blue;
+		svg {
+			fill: $color-white;	
+		}
+	}
+}

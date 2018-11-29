@@ -1,0 +1,50 @@
+// --------------------------------------------------------------------------------
+// VIEW - INVOICE DETAIL
+//---------------------------------------------------------------------------------
+.v-invoice-detail {
+
+	.m-form-grid-row-header .m-status {
+		padding: $l-spacing-5 $l-spacing-13;
+	}
+
+	.invoice-actions {
+		margin-top: $l-spacing-55;
+	}
+
+	.make-payment {
+		margin-top: $l-spacing-8;
+
+		.make-payment-amount {
+			display: none;
+		}
+
+		.make-payment-actions {
+			display: none;
+			margin-bottom: $l-spacing-13;
+			margin-top: $l-spacing-13;	
+		}
+	}
+
+
+    @media (max-width: 560px) {
+    	.invoice-detail-form {
+    		.m-form-grid-50 {
+    			@include j-column(1);
+    		}
+    		.m-form-grid-50:first-child {
+    			margin-bottom: $l-spacing-21;
+    		}
+    	}
+
+    	.invoice-actions li, .invoice-actions li a {
+    		display: block;
+    		float: none;
+			margin-bottom: $l-spacing-13;
+			margin-left: 0;
+    	}
+		.invoice-actions li:last-child {
+    		margin-bottom: 0;
+    	}    	
+    }
+
+}

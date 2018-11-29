@@ -1,0 +1,67 @@
+// --------------------------------------------------------------------------------
+// TEMPLATE - CONTENT
+//---------------------------------------------------------------------------------
+.t-content {
+    @include font-size(0.8750); // 14px
+    @include j-cf();
+    @include position(absolute, $top: $template-header-height + $template-breadcrumbs-height, $right: 0, $bottom: 0, $left: 0);
+
+    background: $content-background;
+    border-bottom: 0;
+    border-left: 1px solid $template-border-color;
+    color: $content-font-color;
+    margin: 0;
+    padding: 0;
+
+    .t-content-body {
+        @include position(absolute, $top: 0, $right: 0, $bottom: 0, $left: 0);
+
+        overflow-y: auto;
+
+        &.t-content-body-with-padding {
+            padding: $l-spacing-13;
+        }
+
+        &.t-content-body-with-actions {
+            @include position(absolute, $top: 0, $right: 0, $bottom: $template-actions-height, $left: 0);
+        }
+
+        .back-link {
+            margin-bottom: $l-spacing-21;
+
+            a {
+                text-decoration: none;
+                color: $template-color-secondary;
+            }
+        }
+    }
+
+    .t-content-body-actions {
+        @include position(absolute, $right: 0, $bottom: 0, $left: 0);
+
+        background: $template-actions-background;
+        border-top: 1px solid $template-border-color;
+        height: $template-actions-height;
+        padding: $l-spacing-8 $l-spacing-13;
+    }
+
+
+
+
+
+
+
+
+    .card-gray-action {
+        color: $template-color-secondary;
+        text-decoration: none;
+    }
+
+
+
+
+
+}
+
+
+

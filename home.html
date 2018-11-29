@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>
+	        Self Service Portal
+	    </title>
+
+		<link rel="stylesheet" href="assets/styles/style.css">
+	</head>
+    <body class="v-home">
+
+		<!-- LOGGED IN AS -->
+    	<div class="t-logged-in-as">
+			<svg viewBox="0 0 512.209 512.209">
+				<g>
+					<title>Warning</title>
+					<rect width="100%" height="100%" fill="#ffffff" fill-opacity="0" />		
+					<path d="M507.345,439.683L288.084,37.688c-3.237-5.899-7.71-10.564-13.429-13.988c-5.705-3.427-11.893-5.142-18.554-5.142   s-12.85,1.718-18.558,5.142c-5.708,3.424-10.184,8.089-13.418,13.988L4.859,439.683c-6.663,11.998-6.473,23.989,0.57,35.98   c3.239,5.517,7.664,9.897,13.278,13.128c5.618,3.237,11.66,4.859,18.132,4.859h438.529c6.479,0,12.519-1.622,18.134-4.859   c5.62-3.23,10.038-7.611,13.278-13.128C513.823,463.665,514.015,451.681,507.345,439.683z M292.655,411.132c0,2.662-0.91,4.897-2.71,6.704c-1.807,1.811-3.949,2.71-6.427,2.71h-54.816c-2.474,0-4.616-0.899-6.423-2.71c-1.809-1.807-2.713-4.042-2.713-6.704v-54.248c0-2.662,0.905-4.897,2.713-6.704c1.807-1.811,3.946-2.71,6.423-2.71h54.812c2.479,0,4.62,0.899,6.428,2.71c1.803,1.807,2.71,4.042,2.71,6.704v54.248H292.655z M292.088,304.357c-0.198,1.902-1.198,3.47-3.001,4.709c-1.811,1.238-4.046,1.854-6.711,1.854h-52.82c-2.663,0-4.947-0.62-6.849-1.854c-1.908-1.243-2.858-2.807-2.858-4.716l-4.853-130.47c0-2.667,0.953-4.665,2.856-5.996c2.474-2.093,4.758-3.14,6.854-3.14h62.809c2.098,0,4.38,1.043,6.854,3.14c1.902,1.331,2.851,3.14,2.851,5.424L292.088,304.357z" />
+				</g>
+			</svg>    		
+    		<div>Logged in as: acme@acme.com</div>
+    	</div>
+
+
+		<!-- HEADER - START -->
+		<div class="t-header">
+
+			<!-- BRANDING - START -->
+			<div class="branding">
+				<a href="home.html">
+
+					<!-- LOGO -->
+				    <div class="logo">
+				        <img src="https://fbhostedpagesdev.blob.core.windows.net/local/logo-5020597-636325406407144223.png%22?version=1?version=1" alt="Fusebill" />
+				    </div>
+
+				    <!-- TITLE -->
+				    <div class="title">
+				        <div>Self Service Billing Portal</div>
+				    </div>
+
+			    </a>
+			</div>
+			<!-- BRANDING - END -->
+
+			<!-- NAV - START -->
+			<div class="t-nav" id='t-nav'>
+				<div id="t-nav-hamburger" class="hamburger">
+					<svg viewBox="0 0 512 512">
+						<g>
+							<title>Menu</title>
+						    <rect width="100%" height="100%" fill="#ffffff" fill-opacity="0" />			
+							<path d="M256,0C114.609,0,0,114.609,0,256c0,141.391,114.609,256,256,256c141.391,0,256-114.609,256-256C512,114.609,397.391,0,256,0z M256,472c-119.297,0-216-96.703-216-216S136.703,40,256,40s216,96.703,216,216S375.297,472,256,472z"/>
+							<g>
+								<rect x="151.5" y="184.5" width="192" height="32"/>
+								<rect x="151.5" y="248.5" width="192" height="32"/>
+								<rect x="151.5" y="312.5" width="192" height="32"/>
+							</g>
+						</g>
+					</svg>
+				</div>
+			</div>
+			<!-- NAV - END -->
+
+		</div>
+		<!-- HEADER - END -->
+
+
+		<!-- NAV ITEMS - START -->
+		<div class="t-nav-items" id="t-nav-items">
+    		<div class="mask"></div>
+    		<div class="triangle"></div>
+		    <ul>
+				<li class="active"><a href='home.html'>HOME</a></li>
+				<li><a href='subscriptions.html'>SUBSCRIPTIONS</a></li>
+				<li><a href='payment-methods.html'>PAYMENT METHODS</a></li>
+				<li><a href='invoices.html'>INVOICES</a></li>
+				<li><a href='statements.html'>STATEMENTS</a></li>
+				<li><a href='settings.html'>SETTINGS</a></li>
+				<li><a href="https://support.fusebill.com" target="_blank">SUPPORT</a></li>
+				<li><a href='index.html'>LOGOUT</a></li>
+			</ul>
+		</div>
+		<!-- NAV ITEMS - END -->
+
+
+		<!-- BREADCRUMBS -->
+		<div class="t-breadcrumbs">
+			<a href="home.html">Home</a>
+		</div>
+
+
+		<!-- CONTENT - START -->
+		<div class="t-content">
+			<div class="t-wrp">
+				<div class="t-content-body">
+
+
+					<!-- HOME GRID - START -->
+					<div class="t-grid t-grid-50 home-content">
+
+
+						<!-- LEFT - START -->
+					    <div class="lft">
+
+
+							<!--- WELCOME - START -->
+							<div class="m-card m-card-gray welcome">
+
+							    <!-- HEADER - START -->
+							    <div class="m-card-hdr">
+							        <div class="t-grid t-grid-90-10">
+							            <div class="lft">
+											<svg viewBox="0 0 14 14">
+												<g>
+												    <title>Welcome</title>
+											        <rect width="100%" height="100%" fill="#ffffff" fill-opacity="0" />
+													<path style="fill:#030104;" d="M7,0.935c-3.866,0-7,2.463-7,5.5c0,1.438,0.703,2.749,1.854,3.729c-0.044,0.955-0.242,2.239-0.942,2.901c1.337,0,2.706-0.88,3.518-1.514c0.796,0.248,1.663,0.384,2.57,0.384c3.866,0,7-2.463,7-5.5S10.866,0.935,7,0.935z"/>
+												</g>
+											</svg>
+							                <div class="title">Welcome</div>
+							            </div>
+							        </div>
+							    </div>
+							    <!-- HEADER - START -->
+
+							    <!-- BODY - START -->
+							    <div class="m-card-bdy">
+							        <div class="m-card-bdy-section">
+										<p>
+											Fusebill simplifies all aspects of subscription billing and management, automating recurring invoicing, payments and revenue recognition while streamlining customer lifecycle management to maximize revenue.
+										</p>
+										<p>
+											Fusebill’s flexible ledger-based product allows businesses to scale with confidence through every growth stage.
+										</p>
+							        </div>
+							    </div>
+							    <!-- BODY - END -->
+
+							</div>
+							<!--- WELCOME - END -->
+
+
+
+
+
+							<!--- ACCOUNT - START -->
+							<div class="m-card m-card-gray summary">
+
+							    <!-- HEADER - START -->
+							    <div class="m-card-hdr">
+							        <div class="t-grid t-grid-90-10">
+							            <div class="lft">
+							                <svg viewBox="0 0 512 512">
+							                    <g>
+							                        <title>Summary</title>
+							                        <rect width="100%" height="100%" fill="#ffffff" fill-opacity="0" />
+							                        <path d="M419.068,0H92.933C80.081,0,69.661,10.42,69.661,23.273v139.636v108.603v108.609v108.606c0,12.851,10.42,23.273,23.273,23.273h108.606h108.606h108.921c12.853,0,23.273-10.422,23.273-23.273V162.909V23.273C442.341,10.42,431.921,0,419.068,0z M178.267,465.455h-62.061v-62.061h62.061V465.455z M178.267,356.849h-62.061v-62.064h62.061V356.849z M178.267,248.239h-62.061v-62.057h62.061V248.239z M286.873,465.455h-62.061v-62.061h62.061V465.455z M286.873,356.849h-62.061v-62.064h62.061V356.849z M286.873,248.239h-62.061v-62.057h62.061V248.239z M201.539,139.636h-85.333V46.545h279.588v93.091h-85.648H201.539z M333.418,186.182h62.376v62.057h-62.376V186.182z M395.795,465.455H333.42v-85.333v-85.336h62.376V465.455z" />
+							                    </g>
+							                </svg>
+							                <div class="title">Summary</div>
+							            </div>
+							        </div>
+							    </div>
+							    <!-- HEADER - START -->
+
+							    <!-- BODY - START -->
+							    <div class="m-card-bdy">
+							        <div class="m-card-bdy-section">
+
+							        	<!-- STATUS -->
+						                <div class="status">
+						            		<!-- SERVICE -->
+						                    <div class="m-status m-status-success">Service - Active</div>
+
+							                <!-- ACCOUNTING STATUS -->
+						                    <div class="m-status m-status-success">Accounting - Good</div>
+						                </div>
+
+						                <!-- BALANCE -->
+						                <div class="balance">
+						                	<div>Balance:</div>
+						                	<div>$100,000,000.00 USD</div>
+						                </div>
+
+							            <!-- SUBSCRIPTIONS -->
+							            <div id="subscriptions" class="subscriptions">
+							            	<div>
+							            		<div>9999</div>
+							            		<div>SUBSCRIPTIONS</div>
+							            	</div>
+							            </div>
+
+							            <!-- INVOICES / STATEMENTS -->
+							            <div class="t-grid t-grid-50 invoices-statements">
+
+							            	<!-- INVOICES -->
+							            	<div id="invoices" class="lft invoices">
+							            		<div>9999</div>
+							            		<div>INVOICES</div>
+							            	</div>
+
+											<!-- STATEMENTS -->
+							            	<div id="statements" class="rgt statements">
+							            		<div>9999</div>
+							            		<div>STATEMENTS</div>
+							            	</div>
+
+							            </div>
+
+							        </div>
+							    </div>
+							    <!-- BODY - END -->
+
+							</div>
+							<!--- ACCOUNT - END -->
+
+					    </div>
+						<!-- LEFT - END -->
+
+
+						<!-- RIGHT - START -->
+					    <div class="rgt">
+
+
+							<!-- CONTACTS - START -->
+							<div class="m-card m-card-gray contacts">
+
+							    <!-- HEADER - START -->
+							    <div class="m-card-hdr">
+							        <svg viewBox="0 0 350 350">
+							            <g>
+							                <title>Contacts</title>
+							                <rect width="100%" height="100%" fill="#ffffff" fill-opacity="0" />
+							                <path d="M175,171.173c38.914,0,70.463-38.318,70.463-85.586C245.463,38.318,235.105,0,175,0s-70.465,38.318-70.465,85.587 C104.535,132.855,136.084,171.173,175,171.173z" />
+							                <path d="M41.909,301.853C41.897,298.971,41.885,301.041,41.909,301.853L41.909,301.853z" />
+							                <path d="M308.085,304.104C308.123,303.315,308.098,298.63,308.085,304.104L308.085,304.104z" />
+							                <path d="M307.935,298.397c-1.305-82.342-12.059-105.805-94.352-120.657c0,0-11.584,14.761-38.584,14.761 s-38.586-14.761-38.586-14.761c-81.395,14.69-92.803,37.805-94.303,117.982c-0.123,6.547-0.18,6.891-0.202,6.131 c0.005,1.424,0.011,4.058,0.011,8.651c0,0,19.592,39.496,133.08,39.496c113.486,0,133.08-39.496,133.08-39.496 c0-2.951,0.002-5.003,0.005-6.399C308.062,304.575,308.018,303.664,307.935,298.397z" />
+							            </g>
+							        </svg>
+							        <div class="title">
+							            Contacts
+							        </div>
+							    </div>
+							    <!-- HEADER - END -->
+
+							    <!-- BODY - START -->
+							    <div class="m-card-bdy">
+
+							        <!-- NAME, PHONE, EMAIL -->
+							        <div class="m-card-bdy-section">
+							            <div class="t-grid t-grid-90-10">
+							                <div class="lft">
+							                	<div class="company-name">Company Name</div>
+							                	<div class="fusebill-account">Fusebill Account: 12345678</div>
+							                	<div class="billing-reference">Billing Reference: 87654321</div>
+					                            <div class="name">
+					                                <span>Mr. Firstname Middlename Lastname</span>
+					                                <span>Phd.</span>
+					                            </div>
+						                        <div class="email-phone">email1@email.com</div>
+						                        <div>email2@email.com</div>
+						                        <div>613-111-1111</div>
+						                        <div>613-222-2222</div>
+							                </div>
+							                <div class="rgt">
+						                        <a class="card-gray-action" href="contact.html">Edit</a>
+							                </div>
+							            </div>
+							        </div>
+
+							    </div>
+							    <!-- BODY - END -->
+
+							</div>
+							<!-- CONTACTS - END -->
+
+
+							<!-- ADDRESSES - START -->
+							<div class="m-card m-card-gray addresses">
+
+							    <!-- HEADER - START -->
+							    <div class="m-card-hdr">
+									<svg viewBox="0 0 485.213 485.212">
+										<g>
+											<title>Address</title>
+											<rect width="100%" height="100%" fill="#ffffff" fill-opacity="0" />	
+											<path d="M424.562,394.237c0,62.516-94.321,90.976-181.955,90.976c-87.629,0-181.956-28.46-181.956-90.976c0-51.711,64.562-80.049,136.465-88.343v30.771c-61.375,7.756-106.139,30.443-106.139,57.572c0,33.491,67.864,60.649,151.629,60.649c83.751,0,151.628-27.158,151.628-60.649c0-27.129-44.775-49.816-106.139-57.572v-30.771C359.997,314.188,424.562,342.526,424.562,394.237z M242.606,0c-58.609,0-106.139,47.532-106.139,106.141c0,53.424,39.61,97.196,90.976,104.598v183.498h30.327V210.739c51.352-7.402,90.98-51.174,90.98-104.598C348.75,47.532,301.215,0,242.606,0z M212.279,90.978c-16.762,0-30.324-13.565-30.324-30.327s13.562-30.324,30.324-30.324c16.764,0,30.327,13.562,30.327,30.324S229.043,90.978,212.279,90.978z"/>
+										</g>
+									</svg>
+							        <div class="title">
+							            Address
+							        </div>
+							    </div>
+							    <!-- HEADER - END -->
+
+							    <!-- BODY - START -->
+							    <div class="m-card-bdy">
+
+							        <div class="m-card-bdy-section">
+							            <div class="t-grid t-grid-66-33">
+							                <div class="lft">
+							                	<!-- BILLING ADDRESS -->
+							                    <div class="section-identifier">BILLING ADDRESS</div>
+							                    <div>Company name</div>
+							                    <div>Address Line 1</div>
+							                    <div>Address Line 2</div>
+							                    <div>
+							                        <span>City,</span>
+							                        <span>Provice/State,</span>
+							                        <span>Country</span>
+							                    </div>
+							                    <div>Postal/Zip code</div>
+							                </div>
+							                <div class="rgt">
+							                    <a class="card-gray-action" href="address.html">Edit</a>
+							                </div>
+							            </div>
+							        </div>
+
+							        <div class="m-card-bdy-section">
+							            <div class="t-grid t-grid-66-33">
+							                <div class="lft">
+												<!-- SHIPPING ADDRESS -->
+							                    <div class="section-identifier">SHIPPING ADDRESS</div>
+							                    <div>Contact name</div>
+							                    <div>Shipping instructions</div>
+							                    <div class="billing-as-shipping">
+							                    	<div>Use billing address as shipping address?:</div>
+							                    	<div>Yes</div>
+							                    </div>
+							                </div>
+							                <div class="rgt">
+							                </div>
+							            </div>
+							        </div>
+
+							    </div>
+							    <!-- BODY - END -->
+
+							</div>
+							<!-- ADDRESSES - END -->
+
+
+					    </div>
+						<!-- RIGHT - END -->
+
+
+					</div>
+					<!-- HOME GRID - END -->
+
+
+					<!-- FOOTER - START-->
+					<footer>
+					    <div class="footer-grid">
+					        <div class="company">
+					            <div class="title">Contact</div>
+					            <div>Company Name</div>
+					            <div>Address</div>
+					            <div>City, Province/State</div>
+					            <div>Postal Code/Zip</div>
+					            <div class="terms-conditions"><a href='http://www.sample.com/terms.html'>Terms and Conditions</a></div>
+					        </div>
+
+					        <div class="emails">
+					            <div class="title">Email</div>
+					            <a href="mailto:%Account.SupportEmail%">support@email.com</a>
+					            <a href="mailto:sales@fusebill.com">sales@fusebill.com</a>
+					            <a href="mailto:support@fusebill.com">support@fusebill.com</a>            
+					        </div>
+
+					        <div class="phone">
+					            <div class="title">Phone</div>
+					            <div>888-111-1111</div>
+					            <div>888-222-2222</div>
+					        </div>
+
+					        <div class="social">
+					            <div class="title">Social</div>
+
+					            <!-- LINKEDIN -->
+					            <a href="http://www.linkedin.com/company/fusebill">
+					                <svg viewBox="0 0 512 512">
+					                    <g>
+					                        <path d="M426,0H86C38.7,0,0,38.7,0,86v340c0,47.3,38.7,86,86,86h340c47.301,0,86-38.7,86-86V86C512,38.7,473.301,0,426,0z M192,416   h-64V192h64V416z M160,160c-17.673,0-32-14.327-32-32s14.327-32,32-32s32,14.327,32,32S177.673,160,160,160z M416,416h-64V288 c0-17.673-14.326-32-32-32s-32,14.327-32,32v128h-64V192h64v39.736C301.199,213.604,321.377,192,344,192c39.766,0,72,35.817,72,80 V416z"/>
+					                    </g>
+					                </svg>                
+					            </a>
+
+					            <!-- YOUTUBE -->
+					            <a href="https://www.youtube.com/user/Fusebill">
+					                <svg viewBox="0 0 461.001 461.001">
+					                    <g>
+					                        <path d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728 c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137 C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607 c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z"/>
+					                    </g>
+					                </svg>
+					            </a>
+
+					            <!-- TWITTER -->
+					            <a href="https://twitter.com/fusebill">
+					                <svg viewBox="0 0 612 612">
+					                    <g>
+					                        <path d="M612,116.258c-22.525,9.981-46.694,16.75-72.088,19.772c25.929-15.527,45.777-40.155,55.184-69.411 c-24.322,14.379-51.169,24.82-79.775,30.48c-22.907-24.437-55.49-39.658-91.63-39.658c-69.334,0-125.551,56.217-125.551,125.513 c0,9.828,1.109,19.427,3.251,28.606C197.065,206.32,104.556,156.337,42.641,80.386c-10.823,18.51-16.98,40.078-16.98,63.101 c0,43.559,22.181,81.993,55.835,104.479c-20.575-0.688-39.926-6.348-56.867-15.756v1.568c0,60.806,43.291,111.554,100.693,123.104 c-10.517,2.83-21.607,4.398-33.08,4.398c-8.107,0-15.947-0.803-23.634-2.333c15.985,49.907,62.336,86.199,117.253,87.194 c-42.947,33.654-97.099,53.655-155.916,53.655c-10.134,0-20.116-0.612-29.944-1.721c55.567,35.681,121.536,56.485,192.438,56.485 c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211,141.422,612,116.258z"/>
+					                    </g>
+					                </svg>
+					            </a>
+
+					            <!-- FACEBOOK -->
+					            <a href="http://www.facebook.com/pages/Fusebill/229868340366721">
+					                <svg viewBox="0 0 408.788 408.788">
+					                    <g>
+					                        <path d="M353.701,0H55.087C24.665,0,0.002,24.662,0.002,55.085v298.616c0,30.423,24.662,55.085,55.085,55.085 h147.275l0.251-146.078h-37.951c-4.932,0-8.935-3.988-8.954-8.92l-0.182-47.087c-0.019-4.959,3.996-8.989,8.955-8.989h37.882 v-45.498c0-52.8,32.247-81.55,79.348-81.55h38.65c4.945,0,8.955,4.009,8.955,8.955v39.704c0,4.944-4.007,8.952-8.95,8.955 l-23.719,0.011c-25.615,0-30.575,12.172-30.575,30.035v39.389h56.285c5.363,0,9.524,4.683,8.892,10.009l-5.581,47.087 c-0.534,4.506-4.355,7.901-8.892,7.901h-50.453l-0.251,146.078h87.631c30.422,0,55.084-24.662,55.084-55.084V55.085 C408.786,24.662,384.124,0,353.701,0z"/>
+					                    </g>
+					                </svg>
+					            </a>
+					        </div>
+					    </div>
+					</footer>
+					<!-- FOOTER - END -->
+
+
+
+
+
+
+
+
+				</div>
+			</div>
+		</div>
+		<!-- CONTENT - END -->	
+
+
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+
+				$(document).on("click",'#t-nav-hamburger', function(e, ele){
+					$("#t-nav-items").show();
+				});
+				$(document).on("mouseleave",'#t-nav-items', function(e, ele){
+					$("#t-nav-items").hide();
+				});
+
+
+				$(document).on("click",'#subscriptions', function(e, ele){
+					window.location.href = "subscriptions.html";
+				});
+
+				$(document).on("click",'#invoices', function(e, ele){
+					window.location.href = "invoices.html";
+				});
+
+				$(document).on("click",'#statements', function(e, ele){
+					window.location.href = "statements.html";
+				});
+
+            });
+        </script>	
+
+	</body>
+</html>

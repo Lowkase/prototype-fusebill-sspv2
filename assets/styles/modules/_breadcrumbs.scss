@@ -1,0 +1,43 @@
+// --------------------------------------------------------------------------------
+// MODULES - BREADCRUMBS
+// --------------------------------------------------------------------------------
+.m-breadcrumbs {
+	@include j-cf();
+	@include font-size(0.8125); // 13px
+	
+	color: $color-black;
+	display: block;
+//font-weight: $font-weight-light;    // UNCOMMENT FOR TEMPLATE
+	line-height: 15px;
+	list-style-type: none;
+	margin: 0; 
+	padding: 0;
+
+	li {
+		float: left;
+		color: $color-gray-900;
+		cursor:pointer;
+		text-decoration: none;
+	}
+
+	li:hover {
+		color: $color-orange-hover;
+	}
+
+	li:before {
+	  content: " > "; 
+	  vertical-align: top;
+	  display: inline-block;
+	  margin: 0 $l-spacing-8;		
+	}
+
+
+	li:first-child::before {
+		content: "";
+		margin: 0;
+	}
+
+	li.active {
+		color: $color-orange-hover;
+	}
+}

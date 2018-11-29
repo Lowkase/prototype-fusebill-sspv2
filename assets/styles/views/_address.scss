@@ -1,0 +1,29 @@
+// --------------------------------------------------------------------------------
+// VIEW - ADDRESS
+//---------------------------------------------------------------------------------
+.v-address {
+
+	.use-billing-address {
+        margin-bottom: $l-spacing-21;
+
+        input {
+            margin-top: $l-spacing-8;
+        }
+    }
+
+    .shipping-instructions {
+        margin-bottom: 0;
+    }
+
+    .shipping-address-form {
+        display: none;
+        margin-top: $l-spacing-21;
+    }
+
+    @media (max-width: 900px) {
+        .address-form > div {
+            @include j-column(1);
+        }
+    }
+    
+}

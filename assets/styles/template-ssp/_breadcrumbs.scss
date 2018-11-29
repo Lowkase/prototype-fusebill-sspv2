@@ -1,0 +1,17 @@
+// --------------------------------------------------------------------------------
+// TEMPLATE - BREADCRUMBS
+//---------------------------------------------------------------------------------
+.t-breadcrumbs {
+    @include font-size(0.8750); // 14px
+    @include position(absolute, $top: $template-header-height, $right: 0, $left: 0);
+    @include text-truncate();
+
+    border-bottom: 1px solid $template-border-color;
+    height: $template-breadcrumbs-height;
+    padding: $l-spacing-8 $l-spacing-13;
+
+    a {
+    	color: $template-font-color;
+    	text-decoration: none;
+    }
+}

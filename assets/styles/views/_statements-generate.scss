@@ -1,0 +1,31 @@
+// --------------------------------------------------------------------------------
+// VIEW - STATEMENTS GENERATE
+//---------------------------------------------------------------------------------
+.v-statements-generate {
+
+	.generate-loading, .generated-statement, .generated-actions {
+		display: none;
+	}
+
+    @media (max-width: 560px) {
+    	.generate-statement-form, .generated-statement {
+    		.m-form-grid-50 {
+    			@include j-column(1);
+    		}
+    		.m-form-grid-50:first-child {
+    			margin-bottom: $l-spacing-21;
+    		}
+    	}
+
+    	.generated-actions li, .generated-actions li a {
+    		display: block;
+    		float: none;
+			margin-bottom: $l-spacing-13;
+			margin-left: 0;
+    	}
+		.generated-actions li:last-child {
+    		margin-bottom: 0;
+    	}    	
+    }
+
+}

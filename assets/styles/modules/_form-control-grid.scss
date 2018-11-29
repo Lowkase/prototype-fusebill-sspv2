@@ -1,0 +1,276 @@
+﻿// --------------------------------------------------------------------------------
+// MODULES - FORM CONTROL GRID
+// --------------------------------------------------------------------------------
+.m-form-grid {
+	@include font-size(0.875); // 13px
+
+	background: $color-white;
+	box-shadow: $box-shadow-right-bottom;
+    margin-bottom: $l-spacing-21;
+	padding: $l-spacing-21;
+	position: relative;
+
+	input, select, textarea {
+		width: 100%;
+	}
+    input[type=radio],input[type=checkbox] {
+        width: auto;
+    }
+}
+
+.m-form-grid-no-box {
+    box-shadow: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.m-form-grid-no-background {
+    background: none;
+}
+
+.m-form-grid-table-style {
+    padding: 0;
+}
+
+.m-form-grid-single-cell-style {
+    padding: 0;
+}
+
+
+// DO WE NEED THESE?
+.m-form-grid-no-padding {
+    padding: 0;
+}
+.m-form-grid-padding-big {
+    padding: $l-spacing-21;
+}
+.m-form-grid-padding-small {
+    padding: $l-spacing-13;
+}
+
+
+
+
+
+
+.m-form-grid-row, .m-form-grid-row-header {
+	@include j-cf();
+}
+.m-form-grid-row-last {
+    margin-bottom: 0 !important;
+}
+.m-form-grid-row-header {
+    @include font-size(1); // 16px
+
+    background: $color-gray-50;
+    font-weight: $font-weight-semibold;
+
+    @include j-cf();
+
+    .title {
+        @include j-column(.60);
+
+        padding: 0 !important;
+    }
+    .m-actions-lists {
+        @include j-column(.40);
+    }
+
+    p {
+        @include font-size(0.75); // 12px
+
+        font-weight: $font-weight-regular;
+        margin: 0;
+        clear: both;
+    }
+}
+.m-form-grid-row-header-big-title {
+    .title {
+        @include j-column(1);
+    }
+    .m-actions-lists {
+        @include j-column(0);
+    }
+}
+
+
+.m-form-grid-label-row {
+    margin-bottom: 0;
+
+    label {
+        font-weight: $font-weight-semibold;
+    }
+
+    .radio-check-description label {
+        font-weight: $font-weight-regular;
+    }
+}
+
+.m-form-grid-table-style .m-form-grid-row-header, 
+.m-form-grid-table-style .m-form-grid-row 
+ {
+    border-bottom: 1px solid $color-border;
+
+    > div {
+        border-right: 1px solid $color-border;
+        padding: $l-spacing-13;
+    }
+    > div:last-child {
+        border-right: 0;
+    }
+}
+
+.m-form-grid-single-cell-style .m-form-grid-row-header
+{
+    border-bottom: 1px solid $color-border;
+    padding: $l-spacing-13;
+}
+.m-form-grid-single-cell-style .m-form-grid-body {
+    padding: $l-spacing-13;
+}
+.m-form-grid-single-cell-style .m-form-grid-row {
+    margin-bottom: $l-spacing-21;
+}
+.m-form-grid-single-cell-style .m-form-grid-label-row {
+    margin-bottom: 0;
+}
+
+.m-form-grid-border-right{
+    border-right: 1px solid $color-border;
+}
+.m-form-grid-border-left{
+    border-left: 1px solid $color-border;
+}
+.m-form-grid-border-top{
+    border-top: 1px solid $color-border;
+}
+.m-form-grid-border-bottom{
+    border-bottom: 1px solid $color-border;
+}
+.m-form-grid-border{
+    border: 1px solid $color-border;
+}
+
+.m-form-grid-5 {
+	@include j-column(.05);
+}
+.m-form-grid-table-style .m-form-grid-5 {
+	@include j-span(.05);
+}
+.m-form-grid-10 {
+	@include j-column(.1);
+}
+.m-form-grid-table-style .m-form-grid-10 {
+	@include j-span(.1);
+}
+.m-form-grid-15 {
+	@include j-column(.15);
+}
+.m-form-grid-table-style .m-form-grid-15 {
+	@include j-span(.15);
+}
+.m-form-grid-20 {
+	@include j-column(.2);
+}
+.m-form-grid-table-style .m-form-grid-20 {
+	@include j-span(.2);
+}
+
+.m-form-grid-25 {
+	@include j-column(.25);
+}
+.m-form-grid-table-style .m-form-grid-25 {
+	@include j-span(.25);
+}
+
+.m-form-grid-30 {
+	@include j-column(.3);
+}
+.m-form-grid-table-style .m-form-grid-303 {
+	@include j-span(.3);
+}
+
+.m-form-grid-33 {
+	@include j-column(4/12);
+}
+.m-form-grid-table-style .m-form-grid-33 {
+	@include j-span(4/12);
+}
+
+.m-form-grid-40 {
+	@include j-column(.4);
+}
+.m-form-grid-table-style .m-form-grid-40 {
+	@include j-span(.4);
+}
+
+.m-form-grid-45 {
+	@include j-column(.45);
+}
+.m-form-grid-table-style .m-form-grid-45 {
+	@include j-span(.45);
+}
+
+.m-form-grid-50 {
+	@include j-column(.5);
+}
+.m-form-grid-table-style .m-form-grid-50 {
+	@include j-span(.5);
+}
+
+.m-form-grid-60 {
+	@include j-column(.6);
+}
+.m-form-grid-table-style .m-form-grid-60 {
+	@include j-span(.6);
+}
+
+.m-form-grid-66 {
+	@include j-column(8/12);
+}
+.m-form-grid-table-style .m-form-grid-66 {
+	@include j-span(8/12);
+}
+
+.m-form-grid-70 {
+	@include j-column(.7);
+}
+.m-form-grid-table-style .m-form-grid-70 {
+	@include j-span(.7);
+}
+
+.m-form-grid-75 {
+	@include j-column(.75);
+}
+.m-form-grid-table-style .m-form-grid-75 {
+	@include j-span(.75);
+}
+
+.m-form-grid-80 {
+	@include j-column(.8);
+}
+.m-form-grid-table-style .m-form-grid-80 {
+	@include j-span(.8);
+}
+
+.m-form-grid-90 {
+	@include j-column(.9);
+}
+.m-form-grid-table-style .m-form-grid-90 {
+	@include j-span(.9);
+}
+.m-form-grid-95 {
+	@include j-column(.95);
+}
+.m-form-grid-table-style .m-form-grid-95 {
+	@include j-span(.95);
+}
+.m-form-grid-100 {
+	width: 100%;
+}
+
+.m-form-grid-title {
+    @include font-size(1); // 16px
+
+    font-weight: $font-weight-semibold;
+}

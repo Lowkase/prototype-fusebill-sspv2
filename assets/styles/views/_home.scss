@@ -1,0 +1,178 @@
+// --------------------------------------------------------------------------------
+// VIEW - HOME
+//---------------------------------------------------------------------------------
+.v-home {
+    position: relative;
+
+    .t-content-body {
+        background: $footer-background;
+    }
+
+    .home-content {
+        background: $color-white;
+        padding: $l-spacing-21;
+    }
+
+    .welcome {
+        margin-bottom: $l-spacing-21;
+
+        p {
+            margin-top: 0;
+        }
+    }
+
+    .status {
+        @include j-cf();
+
+        > div {
+            @include font-size(0.7500); // 12px
+
+            display: block;
+            float: left;
+            margin-right: $l-spacing-13;
+            padding: $l-spacing-8;
+        }
+        > div:last-child {
+             margin-right: 0;
+        }
+    }
+
+    .balance {
+        @include font-size(1.2500); // 20px
+        @include j-cf();
+
+        font-weight: $font-weight-extrabold;
+        margin-top: $l-spacing-21;
+        padding-bottom: $l-spacing-21;
+
+        > div {
+            float: left;
+        }
+        > div:first-child {
+            margin-right: $l-spacing-13;
+        }
+    }
+
+    .subscriptions {
+        border-top: 1px solid $template-border-color;
+        padding: $l-spacing-8 0;
+
+        > div {
+            cursor: pointer;
+            padding: $l-spacing-8 0 $l-spacing-21 0;
+            text-align: center !important;
+
+            > div:first-child {
+                @include font-size(2.2500); // 36px
+            }
+
+            > div:last-child {
+                @include font-size(0.8125); // 13px
+            }
+        }
+        > div:hover {
+            background: $color-gray-100;
+        }
+    }
+    .subscriptions:hover {
+        > div {
+            background: $color-gray-100;
+        }
+    }
+
+    .invoices-statements {
+        border-top: 1px solid $template-border-color;
+        padding-top: $l-spacing-8;
+
+        > div {
+            cursor: pointer;
+            padding: $l-spacing-8 0 $l-spacing-21 0;
+            text-align: center !important;
+
+            > div:first-child {
+                @include font-size(2.2500); // 36px
+            }
+
+            > div:last-child {
+                @include font-size(0.8125); // 13px
+            }
+        }
+        > div:hover {
+            background: $color-gray-100;
+        }
+
+        .invoices {
+            border-right: 1px solid $template-border-color;
+        }
+
+        .statements {
+
+        }
+    }
+
+
+    .contacts {
+        margin-bottom: $l-spacing-21;
+
+        .company-name {
+            @include font-size(1.2500); // 20px
+        }
+
+        .fusebill-account {
+            @include font-size(0.7500); // 12px
+        }
+
+        .billing-reference {
+            @include font-size(0.7500); // 12px
+        }
+
+        .name {
+            @include font-size(1.0000); // 16px
+
+            margin-top: $l-spacing-13;
+        }
+
+        .email-phone {
+            margin-top: $l-spacing-13;
+        }
+    }
+
+    .addresses {
+        .m-card-bdy-section {
+            padding: $l-spacing-13;
+        }
+
+        .billing-as-shipping {
+            margin-top: $l-spacing-8;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .home-content > div {
+            @include j-column(1);
+        }
+
+        .contacts {
+            margin-top: $l-spacing-21;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .status {
+            > div {
+                float: none;
+                width: 180px;
+            }
+            > div:last-child {
+                margin-top: $l-spacing-13;
+            }
+        }
+
+        .balance {
+            > div {
+                float: none;
+            }
+        }
+    }
+
+}

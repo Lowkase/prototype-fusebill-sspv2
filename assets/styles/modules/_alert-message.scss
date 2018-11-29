@@ -1,0 +1,39 @@
+﻿// --------------------------------------------------------------------------------
+// MODULES - ALERT MESSAGE
+// --------------------------------------------------------------------------------
+.m-alert-message {
+    @include j-cf();
+
+    background: $color-gray-50;
+    border-radius: $l-border-radius;
+    padding: $l-spacing-13;
+    margin-bottom: $l-spacing-13;
+    position: relative;
+    text-transform: uppercase;
+
+    .icon {
+        float: left;
+        width: $l-spacing-34;
+
+        svg {
+            fill: $color-purple;
+            height: 20px;
+            width: 20px;
+        }
+    }
+
+    .text {
+        float: left;
+        width: 92%;
+    }
+
+    .close {
+        @include position(absolute, $top:$l-spacing-13, $right:$l-spacing-13);
+
+        svg {
+            fill: $color-black;
+            height: 12px;
+            width: 12px;
+        }
+    }
+}

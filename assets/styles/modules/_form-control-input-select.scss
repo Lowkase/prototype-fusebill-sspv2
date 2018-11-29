@@ -1,0 +1,15 @@
+// --------------------------------------------------------------------------------
+// MODULES - FORM CONTROL - INPUT SELECT
+// --------------------------------------------------------------------------------
+.m-form-control-input-select {
+	@include j-cf();
+
+	.m-form-control-select {
+		float: left;
+	}
+
+	.m-form-control-input {
+		float: left;
+        margin-right: $l-spacing-13;
+	}
+}

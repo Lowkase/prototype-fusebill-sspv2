@@ -1,0 +1,119 @@
+// --------------------------------------------------------------------------------
+// MODULE - CUSTOMER PEEK
+// --------------------------------------------------------------------------------
+$m-customer-peek-activate-width: 400px;
+$m-customer-page-title-max-width: 500px;
+$m-customer-page-title-show-info-width: 35px;
+
+.m-customer-peek-activate {
+    @include j-cf();
+
+    .identification-show-info {
+        @include j-cf();
+
+        border-right: 1px solid $color-border;
+        cursor:pointer;
+        float: left;
+        height: $l-header-common-height-medium;
+
+        .identification {
+            @include text-truncate();
+            @include transition(all, $transition-timer-200ms $transition-easeInOutQuad);
+
+            float: left;
+            padding: 15px $l-spacing-13;
+            width: $m-customer-peek-activate-width;
+        }
+
+        .show-info {
+            @include j-cf();
+
+            float: left;
+            padding: 18px $l-spacing-13 20px $l-spacing-13;
+            width: $m-customer-page-title-show-info-width;
+
+            .show-info-down-arrow {
+                @include transition(all, $transition-timer-200ms $transition-easeInOutQuad);
+                @include triangle(down, 4px, $color-gray-900);
+
+                display: block;
+                float: left;
+                margin: $l-spacing-5 0 0 $l-spacing-5;
+            }
+        }
+    }
+    .identification-show-info:hover {
+        .identification {
+            color: $color-blue;
+        }
+
+        .show-info .show-info-down-arrow {
+            @include triangle(down, 4px, $color-blue);
+        }
+    }
+
+    .customer-page-title {
+        @include text-truncate();
+
+        float: left;
+        max-width: $m-customer-page-title-max-width;
+        padding: 15px $l-spacing-13;
+    }
+
+}
+
+#customer-peek-modal {
+    display: none;
+}
+
+.m-customer-peek {
+	@include bubble(
+		$width: 600px, 
+		$height: 260px, 
+		$side: top-left, 
+		$side-width: 100%, 
+		$side-height: 100px, 
+		$triangle-offset: 403px, 
+		$background-color: $color-gray-50,
+		$triangle-color: $color-gray-50,
+		$top: 64px,
+		$left: 13px,
+		$side-color: transparent
+	);
+
+	
+    color: $color-gray-900;
+    font-weight: $font-weight-light;
+
+    .m-form-grid {
+         @include font-size(1); // 16px
+    }
+
+	.body-section {
+        //background: $color-white;
+		padding: $l-spacing-13 $l-spacing-13 $l-spacing-21 $l-spacing-13;
+
+        .fusebilid > div:last-child > div, .customerid > div:last-child > div {
+            @include text-truncate();
+        }
+
+        .customerid {
+            margin-bottom: $l-spacing-13;
+        }
+
+        .balance {
+            font-weight: $font-weight-semibold;
+            margin-bottom: $l-spacing-13;
+        }
+	}
+    .body-section:first-child {
+        border-bottom: 1px solid $color-gray-100;
+    }
+    .body-section:last-child {
+       padding: $l-spacing-21 $l-spacing-13 $l-spacing-13 $l-spacing-13;
+    }
+
+    .m-form-grid {
+        background: $color-gray-50;
+    }
+}

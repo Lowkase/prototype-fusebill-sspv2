@@ -1,0 +1,45 @@
+﻿// --------------------------------------------------------------------------------
+// MODULES - FORM CONTROL HORIZONTAL
+// --------------------------------------------------------------------------------
+.m-form-control-stack-horizontal {
+	@include j-cf();
+
+	> *, 
+    > form > * {
+        float: left;
+        display: block;
+        margin-right: $l-spacing-13;
+	}
+
+    &.right-align {
+	    > *,
+        > form > * {
+            float: right;
+            margin-right: $l-spacing-13;
+	    }
+
+        > *:first-child,
+        > form > *:first-child {
+            margin-right: 0;
+        }
+    }
+
+    label, a {
+        padding-top: $l-spacing-5;
+    }
+
+    label, a {
+        &.inputs {
+             padding-top: $l-spacing-8;
+        }
+    }
+
+    .m-form-control-radio-check-group {
+        .radio-check-control {
+            @include j-column(.1);
+        }
+        .radio-check-description {
+            @include j-column(.9);
+        }
+    }
+}

@@ -1,0 +1,13 @@
+﻿// --------------------------------------------------------------------------------
+// TEMPLATE - CONTENT - FOOTER
+// --------------------------------------------------------------------------------
+
+// FOOTER FOR CONTENT CONTAINER
+.t-view-content-footer {
+	@include position(absolute, $right:0, $left:0, $bottom:0);
+
+	background: $color-gray-50;
+	border-top: 1px solid $color-border;
+	height: $l-footer-common-height-medium;
+	padding: 7px $l-spacing-21 0 $l-spacing-21;
+}

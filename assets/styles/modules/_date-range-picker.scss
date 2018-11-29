@@ -1,0 +1,54 @@
+// --------------------------------------------------------------------------------
+// MODULES - DATE RANGE PICKER
+// --------------------------------------------------------------------------------
+.daterangerpicker .daterangepicker_end_input {
+	margin-top: $l-spacing-13;
+}
+
+.daterangepicker .ranges ul li {
+	background: $button-primary-background-color;
+	border: 1px solid $button-primary-border-color;
+	color: $button-primary-font-color;
+}
+
+.daterangepicker .ranges ul li:hover {
+	background: $button-primary-background-color-hover;
+	border: 1px solid $button-primary-border-color;
+	color: $button-primary-font-color-hover;
+}
+
+.daterangepicker .ranges ul li.active {
+	background: $button-secondary-background-color;
+	border: 1px solid $button-secondary-border-color;
+	color: $button-secondary-font-color;
+}
+
+.daterangepicker .ranges ul li.active:hover {
+	background: $button-secondary-background-color-hover;
+	border: 1px solid $button-secondary-border-color;
+	color: $button-secondary-font-color-hover;
+}
+
+.daterangepicker td.active {
+	background: $button-primary-background-color;
+}
+
+.daterangepicker td.active:hover {
+	background: $button-primary-background-color-hover;
+}
+
+.daterangepicker td.in-range {
+	background:$daterangepicker-inrange;
+}
+
+.daterangepicker td.in-range:hover {
+	background:$daterangepicker-inrange-hover;
+}
+
+.applyBtn {
+	@include position(absolute, $right: $l-spacing-13, $bottom: $l-spacing-13);
+}
+
+.cancelBtn {
+	@include position(absolute, $right: 114px, $bottom: $l-spacing-13);
+}

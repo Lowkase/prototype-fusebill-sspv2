@@ -1,0 +1,26 @@
+// --------------------------------------------------------------------------------
+// MODULES - NAV - MAIN
+// --------------------------------------------------------------------------------
+.t-nav-main {
+    @extend .base-element-ui;
+
+	li {
+		@include j-cf();
+
+		cursor: pointer;
+		position: relative;
+	}
+	li:last-child {
+		margin-bottom: 0;
+	}
+	li:hover {
+		background: $nav-main-link-active-bg-color;
+
+		.expand {
+			background: $nav-main-link-active-expand-bg-color;
+		}
+	}
+	li.active {
+		background: $nav-main-link-active-bg-color;
+	}
+}

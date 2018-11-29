@@ -1,0 +1,29 @@
+// --------------------------------------------------------------------------------
+// MODULES - FORM CONTROL - GO
+// --------------------------------------------------------------------------------
+.m-form-control-go {
+	@include j-cf();
+
+    background: $color-white;
+    border: 1px solid $color-border;
+
+    > * {
+        float: left;
+    }
+
+    .m-form-control-select {
+        border: 0;
+    }
+    .m-form-control-select:hover {
+        border: 0;
+        box-shadow: none;
+    }
+
+    .m-button {
+        display: block;
+        margin: 3px 4px 0 4px;
+    }
+}
+m-form-control-go:hover {
+    box-shadow: $box-shadow-all-light;
+}

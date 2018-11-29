@@ -1,0 +1,158 @@
+// --------------------------------------------------------------------------------
+// BASE - ELEMENTS
+//---------------------------------------------------------------------------------
+*, *:before, *:after {
+    box-sizing: inherit;
+    text-shadow: none !important;
+}
+
+html {
+    box-sizing: border-box;
+    //box-sizing: content-box;
+    
+    -webkit-font-smoothing: antialiased; 
+    -webkit-tap-highlight-color: $color-white;
+    -webkit-text-size-adjust: none; 
+}
+
+html, body {
+    background: $color-white;
+    color: $template-font-color;
+
+    font-family: $template-font;
+    font-size: $font-size; // 14px
+    font-weight: $font-weight-regular;
+
+    min-height: $template-min-height;
+    min-width: $template-min-width;
+
+    height: 100%;
+    width: 100%;
+
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $template-h-color;
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+}
+
+input[type=text], input[type=number], input[type=password] {
+    border: 1px solid $template-border-color;
+    border-radius: $l-border-radius;
+    height: $template-input-height;
+    margin-bottom: 0;
+    outline: none;
+    padding: $l-spacing-3;
+}
+
+select {
+    border-radius: $l-spacing-3;
+    display: block;
+    height: $template-input-height;
+    outline: none;
+    padding: $l-spacing-3 $l-spacing-13;   
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body.iframe {
+    overflow: auto!important;
+}
+
+.base-element-ui {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    @include font-size(0.875); // 14px
+
+    display: block;
+}
+
+.label-input-height {
+    height: $l-input-height;
+    line-height: 30px;
+}
+
+input[type=text], input[type=password], input[type=number], textarea {
+    @include transition(all $transition-timer-400ms $transition-easeInOutQuad);
+
+    border: 1px solid $color-border;
+    border-radius: 0;
+    height: $l-input-height;
+    outline: none;
+    padding: $l-spacing-3;
+    margin-bottom: 0;
+}
+
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+    border: 1px solid $color-border-hover;
+    box-shadow: $box-shadow-all-light;
+}
+
+input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly] {
+    background-color: $color-gray-100;
+}
+
+
+
+.add-on {
+    height: 36px !important;
+    padding-top: 7px !important;
+}
+
+
+.modal .m-form-grid-row-header p {
+    padding: 3px 0 0 0 !important;
+}
+
+
+// CAREFULLY RE-INSTATE
+// MAY BE A LONG TIME BEFORE THESE MAIN ELEMENT OVERRIDES CAN BE RE-INSTATED
+// WE CAN @EXTEND SOME OF THESE IN THE MEANTIME
+
+/*
+h1, h2 h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    @include transition(all $transition-timer-400ms $transition-easeInOutQuad);
+    
+    color: $color-orange;
+    outline: none; 
+}
+a:focus {
+    color: $color-blue;
+}
+*/
+
+

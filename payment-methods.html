@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>
+	        Self Service Portal
+	    </title>
+
+		<link rel="stylesheet" href="assets/styles/style.css">
+	</head>
+    <body class="v-payment-methods">
+
+
+		<!-- MODAL - REMOVE PAYMENT METHOD MODAL - START -->
+		<section id="modal-remove-payment-method" class="m-modal m-modal-size-small">
+			<div class="con">
+				<div class="t-wrp">
+					<div class="cls modal-remove-payment-method-action">
+						<svg viewBox="0 0 191.414 191.414">
+						  	<g>
+								<title>Close</title>
+								<rect width="100%" height="100%" fill="#ffffff" fill-opacity="0" />
+						    	<path d="M107.888,96.142l80.916-80.916c3.48-3.48,3.48-8.701,0-12.181s-8.701-3.48-12.181,0L95.707,83.961L14.791,3.045 c-3.48-3.48-8.701-3.48-12.181,0s-3.48,8.701,0,12.181l80.915,80.916L2.61,177.057c-3.48,3.48-3.48,8.701,0,12.181 c1.74,1.74,5.22,1.74,6.96,1.74s5.22,0,5.22-1.74l80.916-80.916l80.916,80.916c1.74,1.74,5.22,1.74,6.96,1.74 c1.74,0,5.22,0,5.22-1.74c3.48-3.48,3.48-8.701,0-12.181L107.888,96.142z"/>
+						  	</g>
+						</svg>
+					</div>
+
+					<div class="hdr">
+						<div class="title">Remove Payment Method</div>
+					</div>
+
+					<div class="bdy">
+						Are you sure you want to remove this payment method?
+					</div>
+
+					<div class="ftr">
+						<ul class="m-actions-list m-actions-list-right">
+							<li>
+								<div class="m-button m-button-neutral modal-remove-payment-method-action">NO</div>
+								<div class="m-button m-button-secondary modal-remove-payment-method-action">YES</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- MODAL - REMOVE PAYMENT METHOD MODAL - END -->
+
+
+		<!-- MODAL - FAUX PAYPAL IFRAME - START -->
+		<section id="modal-faux-paypal-iframe" class="m-modal m-modal-size-small">
+			<div class="con">
+				<div class="t-wrp">
+					<div class="cls modal-faux-paypal-iframe-action">
+						<svg viewBox="0 0 191.414 191.414">
+						  	<g>
+								<title>Close</title>
+								<rect width="100%" height="100%" fill="#ffffff" fill-opacity="0" />
+						    	<path d="M107.888,96.142l80.916-80.916c3.48-3.48,3.48-8.701,0-12.181s-8.701-3.48-12.181,0L95.707,83.961L14.791,3.045 c-3.48-3.48-8.701-3.48-12.181,0s-3.48,8.701,0,12.181l80.915,80.916L2.61,177.057c-3.48,3.48-3.48,8.701,0,12.181 c1.74,1.74,5.22,1.74,6.96,1.74s5.22,0,5.22-1.74l80.916-80.916l80.916,80.916c1.74,1.74,5.22,1.74,6.96,1.74 c1.74,0,5.22,0,5.22-1.74c3.48-3.48,3.48-8.701,0-12.181L107.888,96.142z"/>
+						  	</g>
+						</svg>
+					</div>
+
+					<div class="hdr">
+						<div class="title">Faux Paypal iFrame</div>
+					</div>
+
+					<div class="bdy">
+						This is a faux paypal iFrame.  Pretend its Paypal... go on Dave... I dare you!
+					</div>
+
+					<div class="ftr">
+						<ul class="m-actions-list m-actions-list-right">
+							<li>
+								<div class="m-button m-button-neutral modal-faux-paypal-iframe-action">NO</div>
+								<div class="m-button m-button-secondary modal-faux-paypal-iframe-action">YES</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- MODAL - FAUX PAYPAL IFRAME - END -->
+
+
+
+
+		<!-- LOGGED IN AS -->
+    	<div class="t-logged-in-as">
+			<svg viewBox="0 0 512.209 512.209">
+				<g>
+					<title>Warning</title>
+					<rect width="100%" height="100%" fill="#ffffff" fill-opacity="0" />		
+					<path d="M507.345,439.683L288.084,37.688c-3.237-5.899-7.71-10.564-13.429-13.988c-5.705-3.427-11.893-5.142-18.554-5.142   s-12.85,1.718-18.558,5.142c-5.708,3.424-10.184,8.089-13.418,13.988L4.859,439.683c-6.663,11.998-6.473,23.989,0.57,35.98   c3.239,5.517,7.664,9.897,13.278,13.128c5.618,3.237,11.66,4.859,18.132,4.859h438.529c6.479,0,12.519-1.622,18.134-4.859   c5.62-3.23,10.038-7.611,13.278-13.128C513.823,463.665,514.015,451.681,507.345,439.683z M292.655,411.132c0,2.662-0.91,4.897-2.71,6.704c-1.807,1.811-3.949,2.71-6.427,2.71h-54.816c-2.474,0-4.616-0.899-6.423-2.71c-1.809-1.807-2.713-4.042-2.713-6.704v-54.248c0-2.662,0.905-4.897,2.713-6.704c1.807-1.811,3.946-2.71,6.423-2.71h54.812c2.479,0,4.62,0.899,6.428,2.71c1.803,1.807,2.71,4.042,2.71,6.704v54.248H292.655z M292.088,304.357c-0.198,1.902-1.198,3.47-3.001,4.709c-1.811,1.238-4.046,1.854-6.711,1.854h-52.82c-2.663,0-4.947-0.62-6.849-1.854c-1.908-1.243-2.858-2.807-2.858-4.716l-4.853-130.47c0-2.667,0.953-4.665,2.856-5.996c2.474-2.093,4.758-3.14,6.854-3.14h62.809c2.098,0,4.38,1.043,6.854,3.14c1.902,1.331,2.851,3.14,2.851,5.424L292.088,304.357z" />
+				</g>
+			</svg>    		
+    		<div>Logged in as: acme@acme.com</div>
+    	</div>
+
+
+		<!-- HEADER - START -->
+		<div class="t-header">
+
+			<!-- BRANDING - START -->
+			<div class="branding">
+				<a href="home.html">
+
+					<!-- LOGO -->
+				    <div class="logo">
+				        <img src="https://fbhostedpagesdev.blob.core.windows.net/local/logo-5020597-636325406407144223.png%22?version=1?version=1" alt="Fusebill" />
+				    </div>
+
+				    <!-- TITLE -->
+				    <div class="title">
+				        <div>Self Service Billing Portal</div>
+				    </div>
+
+			    </a>
+			</div>
+			<!-- BRANDING - END -->
+
+			<!-- NAV - START -->
+			<div class="t-nav" id='t-nav'>
+				<div id="t-nav-hamburger" class="hamburger">
+					<svg viewBox="0 0 512 512">
+						<g>
+							<title>Menu</title>
+						    <rect width="100%" height="100%" fill="#ffffff" fill-opacity="0" />			
+							<path d="M256,0C114.609,0,0,114.609,0,256c0,141.391,114.609,256,256,256c141.391,0,256-114.609,256-256C512,114.609,397.391,0,256,0z M256,472c-119.297,0-216-96.703-216-216S136.703,40,256,40s216,96.703,216,216S375.297,472,256,472z"/>
+							<g>
+								<rect x="151.5" y="184.5" width="192" height="32"/>
+								<rect x="151.5" y="248.5" width="192" height="32"/>
+								<rect x="151.5" y="312.5" width="192" height="32"/>
+							</g>
+						</g>
+					</svg>
+				</div>
+			</div>
+			<!-- NAV - END -->
+
+		</div>
+		<!-- HEADER - END -->
+
+
+		<!-- NAV ITEMS - START -->
+		<div class="t-nav-items" id="t-nav-items">
+    		<div class="mask"></div>
+    		<div class="triangle"></div>
+		    <ul>
+				<li><a href='home.html'>HOME</a></li>
+				<li><a href='subscriptions.html'>SUBSCRIPTIONS</a></li>
+				<li class="active"><a href='payment-methods.html'>PAYMENT METHODS</a></li>
+				<li><a href='invoices.html'>INVOICES</a></li>
+				<li><a href='statements.html'>STATEMENTS</a></li>
+				<li><a href='settings.html'>SETTINGS</a></li>
+				<li><a href="https://support.fusebill.com" target="_blank">SUPPORT</a></li>
+				<li><a href='index.html'>LOGOUT</a></li>
+			</ul>
+		</div>
+		<!-- NAV ITEMS - END -->
+
+
+		<!-- BREADCRUMBS -->
+		<div class="t-breadcrumbs">
+			<a href="home.html">Home</a>
+			<span>&nbsp; &gt; &nbsp;</span>
+			<span>Payment Methods</span>
+		</div>
+
+
+		<!-- CONTENT - START -->
+		<div class="t-content">
+			<div class="t-wrp">
+				<div class="t-content-body t-content-body-with-padding">
+
+
+					<!-- BACK LINK -->
+					<div class="back-link">
+						<a href="home.html">&lt; Back to Home</a>
+					</div>
+
+
+					<div class="m-actions-list m-actions-list-right">
+						<ul>
+							<li>
+								<div class="m-form-control-select">
+									<select id="payment-method-type">
+										<option value="Credit Card">Credit Card</option>
+										<option value="Bank Account">Bank Account</option>
+										<option value="Paypal">Paypal</option>
+									</select>
+								</div>								
+							</li>
+							<li>
+								<div id="add-payment-method" class="m-button m-button-secondary m-button-input">ADD</div>
+							</li>
+						</ul>
+					</div>
+
+					<!-- TABLE CARD - START -->					
+					<div class="m-card-mobile">
+					    <div class="m-card-hdr">
+					        <div class="title">Payment Methods</div>
+					    </div>
+					    <div class="m-card-bdy m-card-bdy-no-padding">
+
+
+					    	<!-- PAYMENT METHODS TABLE - START -->
+					    	<div class="m-table">
+					    		<div class="hdr">
+					    			<div>Method</div>
+					    			<div>Default</div>
+					    			<div>Action</div>
+					    		</div>
+					    		<div class="bdy">
+
+
+					    			<!-- CREIDT CARD - START -->
+					    			<div class="row">
+						    			<div>
+						    				<div class="payment-method">
+												<svg class="payment-method-icon" viewBox="0 0 548.176 548.176">
+							                        <g>
+							                            <title>Credit Card</title>
+							                            <rect width="100%" height="100%" fill="#ffffff" fill-opacity="0"></rect>
+							                            <path d="M534.754,68.238c-8.945-8.945-19.698-13.417-32.258-13.417H45.681c-12.562,0-23.313,4.471-32.264,13.417C4.471,77.185,0,87.936,0,100.499v347.173c0,12.566,4.471,23.318,13.417,32.264c8.951,8.946,19.702,13.419,32.264,13.419h456.815c12.56,0,23.312-4.473,32.258-13.419c8.945-8.945,13.422-19.697,13.422-32.264V100.499C548.176,87.936,543.699,77.185,534.754,68.238z M511.627,447.679c0,2.478-0.903,4.613-2.711,6.427c-1.807,1.8-3.949,2.703-6.42,2.703H45.681c-2.473,0-4.615-0.903-6.423-2.71c-1.807-1.813-2.712-3.949-2.712-6.427V274.088h475.082V447.679z M511.627,164.449H36.545v-63.954c0-2.474,0.902-4.611,2.712-6.423c1.809-1.803,3.951-2.708,6.423-2.708h456.815c2.471,0,4.613,0.901,6.42,2.708c1.808,1.812,2.711,3.949,2.711,6.423V164.449L511.627,164.449z"></path>
+							                            <rect x="73.092" y="383.719" width="73.089" height="36.548"></rect>
+							                            <rect x="182.728" y="383.719" width="109.634" height="36.548"></rect>
+							                        </g>
+							                    </svg>
+							                    <div class="payment-method-text">
+								    				<div>Credit Card</div>
+								    				<div> - </div>
+								    				<div>Good Card</div>
+								    				<div> - </div>
+								    				<div>****4242</div>
+								    			</div>
+						    				</div>
+						    				<div class="payment-method-default">
+						    					Default Payment Method
+						    				</div>
+						    				<div class="payment-mobile-actions">
+							    				<a href="payment-method-credit-card-edit.html" class="view-payment-method">EDIT</a>
+							    				<div class="remove-payment-method">REMOVE</div>						    					
+						    				</div>
+						    			</div>
+
+						    			<div>
+											<svg viewBox="0 0 426.667 426.667">
+				                                <g>
+				                                    <title>Default</title>
+				                                    <rect width="100%" height="100%" fill="#ffffff" fill-opacity="0"></rect>
+				                                    <path style="fill: #263238;" d="M213.333,0C95.518,0,0,95.514,0,213.333s95.518,213.333,213.333,213.333 c117.828,0,213.333-95.514,213.333-213.333S331.157,0,213.333,0z M174.199,322.918l-93.935-93.931l31.309-31.309l62.626,62.622l140.894-140.898l31.309,31.309L174.199,322.918z"></path>
+				                                </g>
+				                            </svg>
+						    			</div>
+
+						    			<div>
+						    				<a href="payment-method-credit-card-edit.html" class="view-payment-method">EDIT</a>
+						    				<div class="remove-payment-method">REMOVE</div>
+						    			</div>
+					    			</div>
+									<!-- CREIDT CARD - END -->
+
+
+					    			<!-- BANK ACCOUNT - START -->
+					    			<div class="row">
+						    			<div>
+						    				<div class="payment-method">
+												<svg class="payment-method-icon" viewBox="0 0 47.001 47.001">
+						                            <g>
+						                                <title>Bank Account</title>
+						                                <rect width="100%" height="100%" fill="#ffffff" fill-opacity="0"></rect>
+						                                <path d="M44.845,42.718H2.136C0.956,42.718,0,43.674,0,44.855c0,1.179,0.956,2.135,2.136,2.135h42.708c1.18,0,2.136-0.956,2.136-2.135C46.979,43.674,46.023,42.718,44.845,42.718z"></path>
+						                                <path d="M4.805,37.165c-1.18,0-2.136,0.956-2.136,2.136s0.956,2.137,2.136,2.137h37.37c1.18,0,2.136-0.957,2.136-2.137s-0.956-2.136-2.136-2.136h-0.533V17.945h0.533c0.591,0,1.067-0.478,1.067-1.067s-0.478-1.067-1.067-1.067H4.805c-0.59,0-1.067,0.478-1.067,1.067s0.478,1.067,1.067,1.067h0.534v19.219H4.805z M37.37,17.945v19.219h-6.406V17.945H37.37zM26.692,17.945v19.219h-6.406V17.945H26.692z M9.609,17.945h6.406v19.219H9.609V17.945z"></path>
+						                                <path d="M2.136,13.891h42.708c0.007,0,0.015,0,0.021,0c1.181,0,2.136-0.956,2.136-2.136c0-0.938-0.604-1.733-1.443-2.021l-21.19-9.535c-0.557-0.25-1.194-0.25-1.752,0L1.26,9.808c-0.919,0.414-1.424,1.412-1.212,2.396C0.259,13.188,1.129,13.891,2.136,13.891z"></path>
+						                            </g>
+						                        </svg>
+							                    <div class="payment-method-text">
+								    				<div>Bank Account</div>
+								    				<div> - </div>
+								    				<div>****8282</div>
+								    			</div>
+						    				</div>
+						    				<div class="payment-mobile-actions">
+							    				<a href="payment-method-credit-card-edit.html" class="view-payment-method">EDIT</a>
+							    				<div class="remove-payment-method">REMOVE</div>						    					
+						    				</div>						    				
+						    			</div>
+
+						    			<div>
+											&nbsp;
+						    			</div>
+
+						    			<div>
+						    				<a href="payment-method-credit-card-edit.html" class="view-payment-method">EDIT</a>
+						    				<div class="remove-payment-method">REMOVE</div>
+						    			</div>
+					    			</div>
+									<!-- BANK ACCOUNT - END -->
+
+
+					    			<!-- PAYPAL - START -->
+					    			<div class="row">
+						    			<div>
+						    				<div class="payment-method">
+												<svg class="payment-method-icon" viewBox="0 0 435.505 435.505">
+													<g>
+														<title>Paypal</title>
+													    <rect width="100%" height="100%" fill="#ffffff" fill-opacity="0" />				
+														<path d="M403.496,101.917c-4.104-5.073-8.877-9.705-14.166-13.839c0.707,13.117-0.508,27.092-3.668,41.884c-8.627,40.413-29.256,74.754-59.656,99.304c-30.375,24.533-68.305,37.502-109.686,37.502h-60.344l-19.533,91.512c-3.836,17.959-19.943,30.99-38.303,30.99H70.938l-4.898,22.484c-1.258,5.79,0.17,11.839,3.887,16.453c3.715,4.614,9.324,7.298,15.25,7.298h66.498c9.24,0,17.225-6.459,19.152-15.495L193.667,313h76.188c36.854,0,70.527-11.464,97.384-33.152c26.869-21.697,45.129-52.186,52.807-88.162C427.822,155.309,422.253,125.106,403.496,101.917z"/>
+														<path d="M117.292,354.191l22.84-107.008h76.188c36.852,0,70.527-11.465,97.383-33.154c26.867-21.697,45.129-52.186,52.809-88.161c7.773-36.378,2.207-66.58-16.553-89.769C331.952,13.832,301.17,0,269.633,0H103.639c-9.209,0-17.174,6.417-19.135,15.414L12.505,345.938c-1.26,5.789,0.168,11.838,3.887,16.453c3.713,4.613,9.32,7.296,15.248,7.296h66.5C107.38,369.687,115.36,363.229,117.292,354.191z M178.235,75.291h52.229c12.287,0,23.274,5.149,30.145,14.129c7.297,9.539,9.431,22.729,5.853,36.188c-0.047,0.171-0.088,0.342-0.131,0.516c-6.57,27.73-33.892,50.291-60.898,50.291h-50.05L178.235,75.291z"/>
+													</g>
+												</svg>
+							                    <div id="payment-method-paypal-edit" class="payment-method-text">
+								    				<div>Paypal</div>
+								    				<div> - </div>
+								    				<div>***92</div>
+								    			</div>
+						    				</div>
+						    				<div class="payment-mobile-actions">
+							    				<a href="payment-method-credit-card-edit.html" class="view-payment-method">VIEW</a>
+							    				<div class="remove-payment-method">REMOVE</div>						    					
+						    				</div>							    				
+						    			</div>
+
+						    			<div>
+						    				&nbsp;
+						    			</div>
+
+						    			<div>
+						    				<a href="payment-method-credit-card-edit.html" class="view-payment-method">VIEW</a>
+						    				<div class="remove-payment-method">REMOVE</div>
+						    			</div>
+					    			</div>
+									<!-- PAYPAL - END -->
+
+
+					    		</div>
+					    	</div>
+							<!-- PAYMENT METHODS TABLE - END -->
+
+
+					    </div>
+					</div>
+					<!-- TABLE CARD - END -->
+
+
+				</div>
+			</div>
+		</div>
+		<!-- CONTENT - END -->	
+
+
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+
+				$(document).on("click",'#t-nav-hamburger', function(e, ele){
+					$("#t-nav-items").show();
+				});
+				$(document).on("mouseleave",'#t-nav-items', function(e, ele){
+					$("#t-nav-items").hide();
+				});
+
+
+				$(document).on("click",'#add-payment-method', function(e, ele){
+					var paymentMethod = $(this).parent().parent().find("#payment-method-type").val();
+
+					if(paymentMethod === "Credit Card"){
+						window.location.href = "payment-method-credit-card-add.html";
+					}
+					if(paymentMethod === "Bank Account"){
+						window.location.href = "payment-method-bank-account-add.html";
+					}
+					if(paymentMethod === "Paypal"){
+						$("#modal-faux-paypal-iframe").show();
+					}
+				});
+
+
+				$(document).on("click",'.remove-payment-method', function(e, ele){
+					$("#modal-remove-payment-method").show();
+				});
+
+				$(document).on("click",'.modal-remove-payment-method-action', function(e, ele){
+					$("#modal-remove-payment-method").hide();
+				});
+
+
+				$(document).on("click",'#payment-method-paypal-edit', function(e, ele){
+					$("#modal-faux-paypal-iframe").show();
+				});
+
+				$(document).on("click",'.modal-faux-paypal-iframe-action', function(e, ele){
+					$("#modal-faux-paypal-iframe").hide();
+				});
+
+            });
+        </script>	
+
+	</body>
+</html>

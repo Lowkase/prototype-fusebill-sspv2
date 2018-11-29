@@ -1,0 +1,14 @@
+// --------------------------------------------------------------------------------
+// MODULES - FORM CONTROL - SELECT - BUTTON
+// --------------------------------------------------------------------------------
+.m-form-control-select-button {
+	@include j-cf();
+
+	div {
+		@include j-column(9/12);
+	}
+
+    button {
+        @include j-column(3/12);
+    }
+}

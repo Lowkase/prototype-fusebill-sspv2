@@ -1,0 +1,10 @@
+// --------------------------------------------------------------------------------
+// BASE - FONTS
+//---------------------------------------------------------------------------------
+@charset "UTF-8";
+
+@include font-loader('opensans-light', 		'../fonts/opensans/light/OpenSans-Light');
+@include font-loader('opensans-regular', 	'../fonts/opensans/regular/OpenSans-Regular');
+@include font-loader('opensans-semibold', 	'../fonts/opensans/semibold/OpenSans-Semibold');
+@include font-loader('opensans-bold', 		'../fonts/opensans/bold/OpenSans-Bold');
+@include font-loader('opensans-extrabold',	'../fonts/opensans/extrabold/OpenSans-ExtraBold');

@@ -1,0 +1,32 @@
+// --------------------------------------------------------------------------------
+// TEMPLATE - LOGGED IN AS
+//---------------------------------------------------------------------------------
+.t-logged-in-as {
+	@include font-size(0.7500); // 12px
+	@include j-cf();
+	@include position(absolute, $top: 0, $right: 0, $left: 0);
+
+	background: $color-red;
+	border-radius: $l-border-radius;
+	color: $color-white;
+	margin: 0 auto;
+	padding: $l-spacing-8;
+	width: 294px;
+	z-index: $zi-bring-to-front;
+
+	svg {
+		display: block;
+		fill: $color-white;
+		float: left;
+		height: 14px;
+		width: 14px;
+	}
+
+	div {
+		@include text-truncate();
+
+		float: left;
+		margin-left: $l-spacing-8;
+		width: 252px;
+	}
+}

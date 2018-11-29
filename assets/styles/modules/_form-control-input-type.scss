@@ -1,0 +1,42 @@
+// --------------------------------------------------------------------------------
+// MODULES - FORM CONTROL - INPUT - TYPE
+// --------------------------------------------------------------------------------
+.m-form-control-input-type {
+	@include j-cf();
+
+	> div:last-child {
+        background: $color-gray-50;
+        border: 1px solid $color-border;
+        border-left: 0;
+        float: left;
+        height: $l-input-height;
+        text-align: center;
+        width: 40px;
+
+        > div {
+           padding-top: 6px;
+
+           svg {
+               width: 20px;
+               height: 20px;
+           }
+        }
+	}
+
+	> div:first-child {
+		float: left;
+	}
+}
+
+
+// EXAMPLE
+/**
+<div class="m-form-control-input-type">
+    <div>
+        <INPUT TAG />
+    </div>
+    <div>
+        <div>$</div>
+    </div>
+</div>
+*/

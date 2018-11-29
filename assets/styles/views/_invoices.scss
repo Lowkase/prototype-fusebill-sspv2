@@ -1,0 +1,142 @@
+// --------------------------------------------------------------------------------
+// VIEW - INVOICE
+//---------------------------------------------------------------------------------
+.v-invoices {
+
+	$invoice-table-text-line-height: 25px;
+
+	.total-outstanding {
+		@include j-cf();
+
+		margin-bottom: $l-spacing-13;
+
+		.amount {
+			float: right;
+			margin-left: $l-spacing-8;
+
+			span {
+				background: $color-gray-300;
+				color: $color-white;
+				display: inline-block;
+				padding: $l-spacing-8 $l-spacing-13 7px $l-spacing-13;
+			}
+		}
+
+		.make-payment-initiate {
+			float: right;
+		}
+
+	    @media (max-width: 570px) {
+			.amount {
+				margin-bottom: $l-spacing-8;
+			}
+	    }
+	}
+
+	.payment-form {
+		@include j-cf();
+
+		> div {
+			float: right;
+		}
+
+		.make-payment-amount {
+			display: none;
+		}
+
+		.make-payment-actions {
+			display: none;
+			margin-bottom: $l-spacing-13;
+			margin-top: $l-spacing-13;	
+		}
+	}
+
+	.m-table {
+		svg {
+			height: 20px;
+		}
+
+		.row {
+			@include j-cf();
+
+			border-bottom: 1px solid $template-border-color;
+
+			> div {
+				line-height: 20px;
+				height: 40px;
+				padding: $l-spacing-8 $l-spacing-13;
+			}
+
+			> div:nth-child(1) {
+				@include j-span(10/12);
+
+				> div:nth-child(1) {
+					@include j-span(5/12);
+
+					line-height: $invoice-table-text-line-height;
+				}
+
+				> div:nth-child(2) {
+					@include j-span(5/12);
+
+					line-height: $invoice-table-text-line-height;
+				}
+
+				> div:nth-child(3) {
+					@include j-span(2/12);
+				}				
+			}
+
+			> div:nth-child(2) {
+				@include font-size(0.8125); // 13px
+				@include j-span(2/12);
+
+				border-left: 1px solid $template-border-color;
+				line-height: $invoice-table-text-line-height;
+				text-align: center;
+
+				> * {
+					color: $template-color-secondary;
+					cursor: pointer;
+					display: inline-block;
+					font-weight: $font-weight-semibold;
+					padding: 0 $l-spacing-8;
+					text-decoration: none;
+				}
+
+			}
+		}
+		.row:last-child {
+			border-bottom: 0;
+		}
+
+	    @media (max-width: 570px) {
+	    	.row {
+
+				> div {
+					height: auto;
+				}
+
+				> div:nth-child(1) {
+					@include j-span(9/12);
+
+					border-right: 1px solid $template-border-color;
+
+					> div:nth-child(1), > div:nth-child(2), > div:nth-child(3) {
+						@include j-span(1);
+					}
+
+					> div:nth-child(3) {
+						margin-top: $l-spacing-8;
+					}
+				}
+
+				> div:nth-child(2) {
+					@include j-span(3/12);
+
+					border-left: 0;
+				}
+	    	}
+	    }
+	}
+}

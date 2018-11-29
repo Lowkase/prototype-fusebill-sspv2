@@ -1,0 +1,18 @@
+// --------------------------------------------------------------------------------
+// TEMPLATE - APP
+// --------------------------------------------------------------------------------
+.t-app {
+	// NAVIGATION
+	.t-nav {
+		@include position(absolute, $top:0, $bottom:0, $left:0);
+		background: $nav-main-color;
+		box-shadow: $box-shadow-right;
+		width: $l-main-nav-width;
+		z-index: $zi-main-nav;
+	}
+
+	// CONTENT - HEADER + VIEW
+	.t-content {
+		@include position(absolute, $top:0, $right:0, $bottom:0, $left:$l-main-nav-width);
+	}
+}

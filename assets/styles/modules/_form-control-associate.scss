@@ -1,0 +1,156 @@
+// --------------------------------------------------------------------------------
+// MODULES - FORM CONTROL - ASSOCIATED
+// --------------------------------------------------------------------------------
+
+$control-assosicate-top: 50px;
+$control-assosicate-lft-width: 33%;
+$control-associate-hdr-height: 131px;
+$control-associate-hdr-height-extended: 182px;
+$control-associate-hdr-height-extended-extended: 66px;
+
+.m-form-control-associate {
+    @include position(absolute, $top:$control-assosicate-top, $right:0, $bottom:0, $left:0 );
+
+    .lft {
+        @include position(absolute, $top:0, $bottom:0, $left:0 );
+
+        width: $control-assosicate-lft-width;
+    }
+    .rgt {
+        @include position(absolute, $top:0, $right:0, $bottom:0, $left:$control-assosicate-lft-width );
+    }
+
+
+    .associate-hdr {
+        @include position(absolute, $top:0, $right:0, $left:0 );
+
+        background: $color-gray-50;
+        border-top: 1px solid $color-border;
+        border-right: 1px solid $color-border;
+        height: $control-associate-hdr-height;
+        padding: $l-spacing-13;
+
+        .retired {
+            @include j-cf();
+            @include position(absolute, $top:15px, $right:13px );
+
+            * {
+                display: block;
+                float: right;
+            }
+
+            label {
+                margin-left: $l-spacing-8;
+            }
+        }
+
+        .title {
+            @include font-size(1); // 16px
+
+            font-weight: $font-weight-semibold;
+            margin-bottom: $l-spacing-8;
+        }
+
+    }
+    .associate-hdr-extended {
+        @include position(absolute, $top:0, $right:0, $left:0 );
+
+        height: $control-associate-hdr-height-extended;
+
+        .original {
+            background: $color-gray-50;
+            border-top: 1px solid $color-border;
+            border-right: 1px solid $color-border;
+            padding: $l-spacing-13;
+            width: 100%;
+        }
+
+        .extended {
+            background: $color-white;
+            border-top: 1px solid $color-border;
+            border-right: 1px solid $color-border;
+            height: $control-associate-hdr-height-extended-extended;
+            padding: $l-spacing-13;
+            width: 100%;
+
+            .sml-text {
+                @include font-size(0.6875); // 11px
+            }
+
+            .select-all {
+                margin-top: $l-spacing-13;
+            }
+        }
+
+        .retired {
+            @include j-cf();
+            @include position(absolute, $top:15px, $right:13px );
+
+            * {
+                display: block;
+                float: right;
+            }
+
+            label {
+                margin-left: $l-spacing-8;
+            }
+        }
+
+        .title {
+            @include font-size(1); // 16px
+
+            font-weight: $font-weight-semibold;
+            margin-bottom: $l-spacing-8;
+        }
+
+        .bulk-action-icon {
+            height: 16px;
+            margin-top: 12px;
+            width: 16px;
+        }
+
+        .include-exclude {
+            margin-top: 4px;
+        }
+    }
+
+    .associate-bdy {
+        @include position(absolute, $top:$control-associate-hdr-height, $right:0, $bottom:0, $left:0 );
+
+        background: $color-white;
+        border-top: 1px solid $color-border;
+        border-right: 1px solid $color-border;
+    }
+    .associate-bdy-extended {
+        @include position(absolute, $top:$control-associate-hdr-height-extended, $right:0, $bottom:0, $left:0 );
+
+        background: $color-white;
+        border-top: 1px solid $color-border;
+        border-right: 1px solid $color-border;
+    }
+    .rgt .associate-hdr, .rgt .associate-bdy {
+        border-right: 0;
+    }
+
+    .associate-list  {
+	    list-style-type: none;
+	    margin: 0; 
+	    padding: 0;
+
+        .m-form-grid{
+            background: none;
+        }
+
+        > li {
+            border-bottom: 1px solid $color-border;
+            cursor:pointer;
+            padding: $l-spacing-13;
+            position: relative;
+        }
+
+        > li:hover, > li.active {
+            background: $color-gray-50;
+        }
+    }
+
+}

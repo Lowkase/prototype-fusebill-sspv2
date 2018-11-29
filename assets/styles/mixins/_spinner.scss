@@ -1,0 +1,67 @@
+// --------------------------------------------------------------------------------
+// MIXINS - SPINNER
+// --------------------------------------------------------------------------------
+@mixin spinner($size:140px, $color:black) {
+    animation: m-loading-rotate 1s linear infinite;
+    height: $size;
+    margin: 0 auto;
+    width: $size;
+	z-index: $zi-loading + $zi-plus-one;
+
+    .circle {
+        float: left;
+        height: $size;
+        overflow: hidden;
+        position: relative;
+        width: $size/2;
+
+        &:before {
+            border: ($size * 0.03) solid $color;
+            border-bottom-color: transparent;
+            border-radius: 50%;
+            content: "";
+            height: $size;
+            position: absolute;
+            top: 0;
+            width: $size;
+        }
+
+        &.left {
+            &:before {
+                animation: m-loading-left-spin 1333ms cubic-bezier(0.4, 0.0, 0.2, 1) infinite both;
+                border-right-color: transparent;
+                left: 0;
+            }
+        }
+
+        &.right {
+            &:before {
+                animation: m-loading-right-spin 1333ms cubic-bezier(0.4, 0.0, 0.2, 1) infinite both;
+                border-left-color: transparent;
+                right: 0;
+            }
+        }
+    }
+
+}
+
+@keyframes m-loading-rotate {
+    to { transform: rotate(360deg) }
+}
+
+@keyframes m-loading-left-spin {
+    from { transform: rotate(130deg); }
+    50% { transform: rotate(45deg); }
+    to { transform: rotate(130deg); }
+}
+
+@keyframes m-loading-right-spin {
+    from { -webkit-transform: rotate(-130deg); }
+    50% { -webkit-transform: rotate(-45deg); }
+    to { -webkit-transform: rotate(-130deg); }
+}
+
+// Example
+/*
+@include spinner($size:140px, $color:black);
+*/

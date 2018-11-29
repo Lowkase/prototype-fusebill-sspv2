@@ -1,0 +1,71 @@
+// --------------------------------------------------------------------------------
+// VIEW - PAYMENT METHOD CREDIT CARD
+//---------------------------------------------------------------------------------
+.v-payment-method-credit-card {
+
+    .payment-method-credit-card-form {
+        .title {
+            @include j-cf();
+
+            width: 100%;
+
+            > * {
+                display: block;
+                float: left;
+            }
+
+            > div:first-child {
+                line-height: 24px;
+                margin-right: $l-spacing-13;
+            }
+
+            svg {
+                height: 24px;
+                margin-left: $l-spacing-13;
+            }
+
+            @media (max-width: 380px) {
+                > div {
+                    float: none;
+                }
+
+                svg:first-child {
+                    margin-left: 0;
+                }
+            }
+
+
+        }
+    }
+
+    @media (max-width: 900px) {
+    	.payment-method-credit-card-form {
+    		.m-form-grid-50 {
+    			@include j-column(1);
+    		}
+
+    		.m-form-grid-50:first-child {
+    			margin-bottom: $l-spacing-21;
+    		}
+    	}
+    }
+
+    .make-a-payment {
+        @include j-cf();
+
+        margin-top: $l-spacing-8;
+
+        input, div {
+            float: left;
+        }
+
+        div {
+            width: 80%;
+        }
+
+        span {
+            font-weight: $font-weight-semibold;
+        }
+    }
+
+}

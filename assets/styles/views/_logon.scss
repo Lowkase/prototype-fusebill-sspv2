@@ -1,0 +1,85 @@
+// --------------------------------------------------------------------------------
+// VIEW - LOGON
+//---------------------------------------------------------------------------------
+.v-logon {
+    @include position(absolute, $top:0, $right:0, $bottom:0, $left:0);
+
+    background: $logon-background;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    width: 100%;
+
+    .logon-con {
+        @include position(absolute, $top: 0, $right: 0, $bottom: 0, $left: 0);
+
+        background: $logon-modal-background;
+        border: $logon-modal-border;
+        box-shadow: $logon-modal-box-shadow;
+        height: 485px;
+        margin: auto;
+        padding: $l-spacing-21;
+        width: 400px;
+
+        @media (max-width: 440px) {
+            margin: 0 auto;
+            height: 100%;
+            padding: $l-spacing-13;
+            width: 100%;
+        }
+
+        .logo {
+            text-align: center;
+
+            img {
+                height: $template-header-logo-height + 10;
+                width: $template-header-logo-width;
+            }
+        }
+
+        .title {
+            @include font-size(1.2500); // 20px
+
+            color: $color-gray-700;
+            text-align: center;
+        }
+
+        .logon-form {
+            height: 330px;
+            margin-top: $l-spacing-34;
+
+            .forgot-password {
+                @include font-size(0.8125); // 13px
+
+                margin-top: $l-spacing-5;
+                text-align: right;
+
+                a {
+                    color: $color-gray-900;
+                    text-decoration: none;
+                }
+            }
+
+            .m-button {
+                @include position(absolute, $bottom: 0);
+
+                margin-top: $l-spacing-21;
+            }
+
+            .err {
+                color: $color-red;
+                margin-top: $l-spacing-3;
+            }
+
+            .errs {
+                background: $color-red;
+                border-radius: $l-border-radius;
+                color: $color-white;
+                margin-top: $l-spacing-21;
+                padding: $l-spacing-8 $l-spacing-13;
+            }
+        }
+
+    }
+
+}

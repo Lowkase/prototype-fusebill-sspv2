@@ -1,0 +1,14 @@
+// --------------------------------------------------------------------------------
+// MODULES - FORM CONTROL - HTTP
+// --------------------------------------------------------------------------------
+.m-form-control-http {
+	@include j-cf();
+
+	.m-form-control-select {
+		@include j-column(3/12);
+	}
+
+	.m-form-control-http-input {
+		@include j-column(9/12);
+	}
+}

@@ -1,0 +1,40 @@
+// --------------------------------------------------------------------------------
+// MODULES - FORM CONTROL - SELECT INPUT BUTTON
+// --------------------------------------------------------------------------------
+.m-form-control-select-input-button {
+	@include j-cf();
+
+    display: inline-block;
+
+	.m-form-control-select {
+        border-right: 0;
+        box-shadow: none;
+		float: left;
+	}
+
+	.m-form-control-input {
+		float: left;
+	}
+    .m-form-control-input:focus {
+        box-shadow: none !important;
+    }
+
+    button {
+        border-top: 1px solid $color-border !important;
+        border-right: 1px solid $color-border !important;
+        border-bottom: 1px solid $color-border !important;
+        border-radius: 0;
+        box-shadow: none;
+        float: left;
+    }
+
+    a {
+        float: left;
+        margin-left: $l-spacing-13;
+        margin-top: $l-spacing-8;
+    }
+}
+
+.m-form-control-select-input-button:hover {
+    box-shadow: $box-shadow-all-light;
+}

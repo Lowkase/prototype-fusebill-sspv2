@@ -1,0 +1,97 @@
+﻿// --------------------------------------------------------------------------------
+// MODULES - RADIO-CHECK-GROUP
+// --------------------------------------------------------------------------------
+.m-form-control-radio-check-single {
+    @include j-cf();
+    margin-bottom: $l-spacing-5;
+
+    input, label {
+        display: block;
+        float: left;
+    }
+
+    label {
+        margin-bottom: 0;
+        margin-left: $l-spacing-8;
+    }
+}
+
+.m-form-control-radio-check-group {
+	@include j-cf();
+
+    margin-bottom: 5px;
+   
+
+    .radio-check-control {
+        @include j-column(.06);
+
+        input {
+            margin-top: 0;
+        }
+    }
+
+    .radio-check-control-with-input {
+        input {
+            margin-top: $l-spacing-8;
+        }
+    }
+
+    .radio-check-description {
+        @include j-column(.94);
+
+        padding-top: 0;
+    }
+
+    .radio-check-description-single-line-controls {
+        * {
+            display: inline-block;
+            margin-bottom: 0;
+            margin-right: $l-spacing-8;
+        }
+
+        *:last-child {
+            margin-right: 0;
+        }
+
+        input {
+            width: 100px;
+        }
+    }
+
+    .radio-check-description-multi-line-controls {
+        padding-top: $l-spacing-3;
+
+        label {
+            display: block;
+            padding-top: $l-spacing-3;
+        }
+    }
+
+    .radio-check-description-with-section {
+        .m-form-grid-row {
+            margin-bottom: $l-spacing-8;
+        }
+    }
+}
+.m-form-control-radio-check-group-fixed {
+    .radio-check-control {
+        @include j-column(.2);
+    }
+    .radio-check-description {
+        @include j-column(.8);
+    }
+    .radio-check-control-with-input {
+        input {
+            margin-top: 0;
+        }
+    }
+}
+.m-form-control-radio-check-group-auto {
+    .radio-check-control {
+        width: auto;
+        margin-right: 5px;
+    }
+    .radio-check-description {
+        width: auto;
+    }
+}

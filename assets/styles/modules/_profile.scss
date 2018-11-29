@@ -1,0 +1,75 @@
+// --------------------------------------------------------------------------------
+// MODULE - PROFILE
+// --------------------------------------------------------------------------------
+#profile-modal {
+    display: none;
+}
+
+.m-profile {
+	@include bubble(
+		$width: 280px, 
+		$height: 200px, 
+		$side: top-left, 
+		$side-width: 280px, 
+		$side-height: 50px, 
+		$triangle-offset: 10px, 
+		$background-color: $color-white, 
+		$triangle-color: $color-white, 
+		$top: 52px, 
+		$left: 206px,
+		$side-color: transparent
+	);
+
+    .dropdown-menu {
+        left: auto;
+        right: 91px;
+        text-align: right;
+        top: 54px;
+    }
+
+	.user {
+		@include j-cf();
+
+		border-bottom: 1px solid $color-border;
+		padding: $l-spacing-13;
+
+		.icon {
+			@include j-column(.20);
+
+			svg {
+				display: block;
+                height: 40px;
+				width: 40px;
+			}
+		}
+
+		.info {
+			@include j-column(.80);
+
+			> div {
+				@include text-truncate();
+			}
+		}
+	}
+
+	.links {
+		 @include font-size(0.8125); // 13px
+
+		background: $color-gray-50;
+		padding: $l-spacing-13;
+
+		> div {
+			cursor: pointer;
+		}
+
+		> div:hover {
+			color: $color-blue;
+		}
+	}
+
+	.actions {
+		background: $color-white;
+		border-top: 1px solid $color-border;
+		padding: $l-spacing-13;
+	}
+}

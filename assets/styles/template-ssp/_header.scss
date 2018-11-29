@@ -1,0 +1,45 @@
+// --------------------------------------------------------------------------------
+// TEMPLATE - HEADER
+//---------------------------------------------------------------------------------
+.t-header {
+    @include j-cf();
+    @include position(absolute, $top: 0, $right: 0, $left: 0);
+
+    background: $header-background;
+    border-bottom: 1px solid $template-border-color;
+    height: $template-header-height;
+    padding: $l-spacing-8 $l-spacing-13; 
+
+    .branding {
+        @include j-column(10/12);
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .t-nav {
+        @include j-column(2/12)
+    }
+
+    .logo {
+        img {
+            height: $template-header-logo-height;
+        }
+        
+        .logo-svg {
+            fill: $header-svg-color;
+            height: $template-header-logo-height;
+        }
+    }
+
+    .title {
+        @include text-truncate();
+
+        div {
+            @include font-size(0.8125); // 13px
+
+            color: $header-title-font-color;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+// --------------------------------------------------------------------------------
+// VIEW - PAYMENT METHOD BANK ACCOUNT
+//---------------------------------------------------------------------------------
+.v-payment-method-bank-account {
+
+    @media (max-width: 900px) {
+    	.payment-method-bank-account-form {
+    		.m-form-grid-50 {
+    			@include j-column(1);
+    		}
+
+    		.m-form-grid-50:first-child {
+    			margin-bottom: $l-spacing-21;
+    		}
+    	}
+    }
+    
+    .make-a-payment {
+        @include j-cf();
+
+        margin-top: $l-spacing-8;
+
+        input, div {
+            float: left;
+        }
+
+        div {
+            width: 80%;
+        }
+
+        span {
+            font-weight: $font-weight-semibold;
+        }
+    }
+
+	.check-help {
+		display: block;
+		margin-top: $l-spacing-13;
+        width: 252px;
+	}
+
+}

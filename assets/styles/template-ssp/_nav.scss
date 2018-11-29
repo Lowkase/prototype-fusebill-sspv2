@@ -1,0 +1,67 @@
+// --------------------------------------------------------------------------------
+// TEMPLATE - NAV
+//---------------------------------------------------------------------------------
+.t-nav {    
+    margin-top: $l-spacing-8;
+    text-align: right;
+
+    .hamburger {
+        svg {
+            cursor: pointer;
+            fill: $nav-hamburger-color;
+            height: 38px;
+            width: 38px;
+        }
+        svg:hover {
+            fill: $nav-hamburger-color-hover;
+        }
+    }
+}
+
+.t-nav-items {
+    @include bubble(
+        $width: 294px, 
+        $height: $nav-items-height, 
+        $side: top-right, 
+        $side-width: 294px, 
+        $side-height: 50px, 
+        $triangle-offset: 0, 
+        $background-color: $color-white,
+        $triangle-color: transparent,
+        $top: 60px, 
+        $right: 13px,
+        $side-color: transparent
+    );
+
+    display: none;
+
+    li {
+        border-bottom: 1px solid $template-border-color;
+
+        a {
+            @include font-size(0.8750); // 14px
+            @include text-truncate();
+
+            color: $nav-items-font-color;
+            display: block;
+            padding: $l-spacing-13 $l-spacing-13;
+            text-decoration: none;
+        }
+        a:hover {
+            background: $nav-items-active;
+            color: $nav-items-active-font-color;
+        }
+
+        &.active {
+            background: $nav-items-active;
+
+            a {
+                color: $nav-items-active-font-color;
+            }
+        }
+    }
+
+    li:last-child {
+        border-bottom: 0;
+    }
+}
